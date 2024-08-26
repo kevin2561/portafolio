@@ -1,0 +1,454 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-shadow: 0;
+    color: #fff !important;
+}
+
+:root {
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+    --color-tertiary: #343a40;
+    --color-quaternary: #ffc107;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+    --color-gradient-start: #007bff;
+    --color-gradient-end: #6c757d;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+
+}
+
+.espaciado {
+    padding: 5% 5%;
+}
+
+
+/*---------HEADER-------------*/
+#header-main {
+    width: 100%;
+    background-image: url("./img/fondos/3.jpg");
+    min-height: 400px;
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#header-main::after,
+#header-main::before {
+    content: "";
+    background-color: #00011523;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#header-main .row {
+    position: relative;
+    z-index: 2;
+}
+
+
+#caja-img-space {
+    border-radius: 50%;
+}
+
+#cv {
+    padding: 15px 50px;
+    border-radius: 50px;
+}
+
+#img-space {
+    width: 85%;
+}
+
+.caja-nombre {
+    padding-top: 5%;
+}
+
+/*-----------------FIN-------------*/
+
+
+#mian-contenido {
+    background-image: url("./img/fondos/9.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+
+}
+
+#mian-contenido::before {
+    content: "";
+    background: linear-gradient(to right, #0000000f, #feb47b3b);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+
+}
+
+/*-----------------TECNOLOGIAS -------------*/
+#tecnologias-main{
+    text-align: center;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    min-height: 300px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+.item {
+    width: 200px;
+    min-height: 200px;
+    max-height: 190px;
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    flex-shrink: 0;    /* Evita que los elementos se compriman */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px 20px;
+}
+
+.item .icono-tecnologia {
+    fill: var(--color-blanco);
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    filter: drop-shadow(0px 0px 12px var(--icon-color));
+}
+
+.nombre-tecnologia {
+    color: var(--color-blanco);
+    font-size: 20px;
+    background-color: #000 !important;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+
+/*--------------------FIN-------------------------*/
+
+
+/*-----------------HABULIDADES BLANDAS-------------*/
+
+#habilidades-blandas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0;
+}
+
+#contenedor-habilidades {
+    width: 70%;
+    min-height: 500px;
+    max-height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.caja-habilidades-blandas {
+    width: 20%;
+    min-height: 500px;
+    max-height: 500px;
+    padding: 0;
+    margin: 0px 3px;
+    gap: 0;
+    position: relative;
+    border: 2px solid red;
+    border-radius: 10px;
+
+}
+
+
+.caja-habilidades-blandas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+    filter: grayscale(0%);
+    position: relative;
+}
+
+.habilidades-blandas-nombre {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00000080;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+}
+
+.habilidades-blandas-nombre h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    text-shadow: 4px 1px 0px red;
+}
+
+.caja-habilidades-blandas:hover {
+    width: 70%;
+    transition: all ease-in-out 1s;
+
+
+}
+
+.caja-habilidades-blandas:hover img {
+    width: 100%;
+    filter: grayscale(0%);
+
+}
+
+.caja-habilidades-blandas:hover .habilidades-blandas-nombre {
+    opacity: 1;
+}
+
+
+/*-----------------FIN-------------*/
+
+/*---------PROYECTOS-----------*/
+#proyectos {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.manito {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 130px;
+    height: 130px;
+    transform: translateY(-50%);
+    animation: moverManito 3s infinite;
+}
+
+.manito img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes moverManito {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(75px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+.swiper {
+    width: 400px;
+    max-width: 600px;
+    height: 600px;
+    max-height: 800px;
+}
+
+.swiper-slide {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-weight: bold;
+    background-image: var(--img-fondo);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    gap: 20px 0px;
+    overflow: hidden;
+    width: 400px !important;
+    max-width: 600px !important;
+    height: 600px !important;
+    max-height: 800px !important;
+
+
+}
+
+.swiper-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--img-fondo);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    /* Asegúrate de que esté detrás del contenido */
+    transition: filter 0.3s ease;
+    /* Transición suave al hacer hover */
+}
+
+
+
+.swiper-slide:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.752);
+
+}
+
+.caja-1-nombre {
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+    font-weight: 700;
+
+
+
+
+}
+
+.caja-2-descripcion {
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    color: var(--color-blanco);
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    word-spacing: 0.1em;
+    font-weight: normal;
+
+
+
+}
+
+.caja-3-iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    opacity: 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    color: #000;
+}
+
+.aGit {
+    color: #F05032;
+    font-size: 35px;
+}
+
+.aEye {
+    color: #FFF;
+    font-size: 35px;
+}
+
+/* Mostrar contenido al hacer hover */
+.swiper-slide:hover .caja-1-nombre,
+.swiper-slide:hover .caja-2-descripcion,
+.swiper-slide:hover .caja-3-iconos {
+    opacity: 1;
+}
+
+/*------------------FIN----------------------*/
+
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .caja-icon {
+        flex: 1 1 45%;
+        /* Cambia el ancho para pantallas medianas */
+        min-height: 100px;
+        /* Ajusta la altura mínima */
+        padding: 15px;
+    }
+
+    #habilidades-blandas {
+        display: none;
+
+    }
+
+}
+
+/* Media query para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .caja-icon {
+        flex: 1 1 100%;
+        /* Una caja por línea en pantallas pequeñas */
+        min-height: 80px;
+        /* Ajusta la altura mínima */
+        padding: 10px;
+    }
+
+    #habilidades-blandas {
+        display: none;
+
+    }
+
+    #proyectos {
+    }
+}
