@@ -26,27 +26,14 @@ const main = () => {
     ]
 
     const proyectos = [
-        { nombre: "EDO", real: "1", empresa: "SECUAZ", img: "img/proyectos/proyecto_edo.jpg", git: "", pagina: "https://restaurantnikkei.fr/contact/", descripcion: "" },
-        { nombre: "The Simpson", real: "0", empresa: "", img: "img/proyectos/proyecto_simpson.jpg", git: "https://github.com/kevin2561/theSimpson", pagina: "https://musical-peony-5c424d.netlify.app/", descripcion: "Un sitio web de Los Simpsons que fue creado ya que me gustó mucho la serie desde que era un niño y también fue una buena manera de practicar mis conocimientos de js y el framework React que utilicé para crear este sitio web." },
-        { nombre: "Dota 2", real: "0", empresa: "", img: "img/proyectos/proyecto_dota2.jpg", git: "https://github.com/kevin2561/dota2", pagina: "", descripcion: "Una pagina web de Dota 2, creo en esta pagina porque me encanto el juego, fue uno de los juegos que mas me entretuvo y ademas fue una buena forma de practicar con js ya que en esta pagina esta hecha con js puro y un poco de jQuery." },
-        { nombre: "App Musica", real: "0", empresa: "", img: "img/proyectos/proyecto_appmusica.jpg", git: "https://github.com/kevin2561/appMusica", pagina: "", descripcion: "Una pequeña aplicación que Brendia puede convertir en mp3 en la que podrás escuchar una lista de canciones." },
-        { nombre: "CRUD Gestor de Cuentas", real: "0", empresa: "", img: "img/proyectos/proyecto_sistemacuentas.jpg", git: "", pagina: "", descripcion: "" },
+        { nombre: "EDO", real: "1", empresa: "SECUAZ", img: "../img/proyectos/proyecto_edo.jpg", git: "", pagina: "https://restaurantnikkei.fr/contact/", descripcion: "" },
+        { nombre: "The Simpson", real: "0", empresa: "", img: "../img/proyectos/proyecto_simpson.jpg", git: "https://github.com/kevin2561/theSimpson", pagina: "https://musical-peony-5c424d.netlify.app/", descripcion: "Un sitio web de Los Simpsons que fue creado ya que me gustó mucho la serie desde que era un niño y también fue una buena manera de practicar mis conocimientos de js y el framework React que utilicé para crear este sitio web." },
+        { nombre: "Dota 2", real: "0", empresa: "", img: "../img/proyectos/proyecto_dota2.jpg", git: "https://github.com/kevin2561/dota2", pagina: "", descripcion: "Una pagina web de Dota 2, creo en esta pagina porque me encanto el juego, fue uno de los juegos que mas me entretuvo y ademas fue una buena forma de practicar con js ya que en esta pagina esta hecha con js puro y un poco de jQuery." },
+        { nombre: "App Musica", real: "0", empresa: "", img: "../img/proyectos/proyecto_appmusica.jpg", git: "https://github.com/kevin2561/appMusica", pagina: "", descripcion: "Una pequeña aplicación que Brendia puede convertir en mp3 en la que podrás escuchar una lista de canciones." },
+        { nombre: "CRUD Gestor de Cuentas", real: "0", empresa: "", img: "../img/proyectos/proyecto_sistemacuentas.jpg", git: "", pagina: "", descripcion: "" },
     ]
 
-    // const tecnologiasHTML = (tecnologias) => {
-    //     let div = "";
-    //     const contenedorIconos = document.getElementById("contenedor-iconos");
-    //     tecnologias.map((habilidad) => {
-    //         div += `<div class='caja-icon sel' style='--icon-color: ${habilidad.color}'> `
-    //         div += `${habilidad.icono} `
-    //         div += `<div class='caja-nombre'> <span>${habilidad.nombre}</span> </div>`
-    //         div += `<div class='nivel'><h6>Nivel</h6><span>${habilidad.level}</span></div>`
-    //         div += `</div>`
-    //     })
-
-    //     contenedorIconos.innerHTML = div;
-
-    // }
+//400x300
 
     const tecnologiasHTML = (tecnologias) => {
         let div = "";
@@ -54,7 +41,7 @@ const main = () => {
         tecnologias.forEach((item, index) => {
             div += `<div class='item item${index + 1}' style='--icon-color: ${item.color};'>`
             div += `<div class='icono-tecnologia'>${item.icono}</div>`
-            div += `<div class='nombre-tecnologia'>${item.nombre}</div>`
+            div += `<div class='nombre-tecnologia'><span>${item.nombre}<span></div>`
             div += `</div>`
         });
 
@@ -65,8 +52,6 @@ const main = () => {
             item.style.animationDelay = `calc(30s / ${items.length} * (${items.length} - ${index + 1}) * -1)`;
         });
     }
-
-
 
     const habilidadBlandasHTML = (habilidadBlandas) => {
         let div = "";
@@ -84,27 +69,9 @@ const main = () => {
     }
 
 
-    const proyectosHTML = (proyectos) => {
-        let div = "";
-        let contenedorProyectos = document.querySelector(".swiper-wrapper");
-        proyectos.map((item) => {
-            div += `<div class='swiper-slide' style='--img-fondo: url(${item.img})'> `
-            div += `<div class='caja-1-nombre'><span>${item.nombre} ${item.real === "0" ? "(Proyecto Propio)" : "(Proyecto Real)"}</span></div>`
-            div += `<div class='caja-2-descripcion'><p>${item.descripcion}</p></div>`
-            div += `<div class='caja-3-iconos'><div><a class='aGit' href='${item.git}' target='_blank' title='Github'>${item.git ? "<i class='bi bi-github'></i>" : ""}</a></div>
-                                               <div><a class='aEye' href='${item.pagina}' target='_blank' title='Ver Página'>${item.pagina ? "<i class='bi bi-eye'></i>" : ""}</a></div>
-                    </div>`
-
-
-            div += `</div>`
-        })
-        contenedorProyectos.innerHTML = div;
-
-    }
-
 
     cv.addEventListener("click", async function () {
-        const url = "img/CV3.pdf";
+        const url = "img/CV_AZUL4.pdf";
         try {
             const response = await fetch(url);
             const blob = await response.blob();
@@ -123,18 +90,40 @@ const main = () => {
 
     })
 
-
-    const swiper = () => {
-        let swiper = new Swiper(".mySwiper", {
-            effect: "cards",
+    const xd = () => {
+        /*=============== SWIPER JS ===============*/
+        let swiperCards = new Swiper(".card__content", {
+            loop: true,
+            spaceBetween: 32,
             grabCursor: true,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                },
+                968: {
+                    slidesPerView: 3,
+                },
+            },
         });
     }
 
+
     tecnologiasHTML(tecnologias)
     habilidadBlandasHTML(habilidadBlandas)
-    proyectosHTML(proyectos)
-    swiper()
+    xd()
+
 
 
 
