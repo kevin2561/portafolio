@@ -33,7 +33,7 @@ const main = () => {
         { nombre: "CRUD Gestor de Cuentas", real: "0", empresa: "", img: "../img/proyectos/proyecto_sistemacuentas.jpg", git: "", pagina: "", descripcion: "" },
     ]
 
-    //400x300
+//400x300
 
     const tecnologiasHTML = (tecnologias) => {
         let div = "";
@@ -68,27 +68,6 @@ const main = () => {
 
     }
 
-    const proyectosHTML = (proyectos) => {
-        let article = ``
-
-        proyectos.map((item) => {
-            article += `<article class='card__article swiper-slide'>`
-            article += `<div class='card__image'>`
-            article += `<img src='${item.img}' alt='${item.nombre}' class='card__img'>`
-            article += `<div class='card__shadow'></div>`
-            article += `</div>`
-            article += `<div class='card__data'>`
-            article += `<h3 class='card__name'>${item.nombre}</h3>`
-            article += `<p class='card__description'>${item.descripcion}</p>`
-            article += `<a href='#' class='card__button'>${item.nombre}</a>`
-            article += `</div>`
-            article += `</article>`
-        })
-        document.getElementById("contenedor-proyectos").innerHTML = article
-
-
-    }
-
 
 
     cv.addEventListener("click", async function () {
@@ -111,7 +90,7 @@ const main = () => {
 
     })
 
-    const carrusel = () => {
+    const xd = () => {
         /*=============== SWIPER JS ===============*/
         let swiperCards = new Swiper(".card__content", {
             loop: true,
@@ -143,8 +122,7 @@ const main = () => {
 
     tecnologiasHTML(tecnologias)
     habilidadBlandasHTML(habilidadBlandas)
-    proyectosHTML(proyectos)
-    carrusel()
+    xd()
 
 
 
