@@ -321,6 +321,8 @@ body {
     position: relative;
     z-index: 99;
     background-color: #000;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
 }
 
 
@@ -358,12 +360,18 @@ body {
 }
 
 .card__enlances {
-    background-color: green;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 
+}
+.enlaces__proyectos{
+    width: 50px;
+    padding: 5px;
+}
+.enlaces__proyectos i {
+    font-size: 25px;
 }
 
 /* Swiper class */
@@ -397,6 +405,8 @@ body {
 .swiper-pagination-bullet-active {
     background-color: var(--second-color);
 }
+
+
 
 
 
