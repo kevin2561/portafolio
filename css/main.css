@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     box-shadow: 0;
-    color: #fff !important;
 }
 
 :root {
@@ -16,11 +15,14 @@
     --color-dark: #343a40;
     --color-gradient-start: #007bff;
     --color-gradient-end: #6c757d;
+    --color-gris: #d1d1d1;
 }
 
 body {
     font-family: 'Open Sans', sans-serif !important;
     background-color: #000;
+    color: #fff;
+
 
 }
 
@@ -91,6 +93,71 @@ body {
 
 
 }
+
+/*-----------------SOBRE MI-------------*/
+.mi-descripcion{
+    color: var(--color-blanco);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+
+
+}
+.contacto {
+    
+}
+
+
+
+.contacto ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacto ul li {
+    margin-bottom: 10px;
+
+}
+
+.contacto ul li a {
+    text-decoration: none;
+    color: var(--color-blanco);
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto ul li a i {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.contacto span {
+    color: var(--color-gris);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+}
+
+.contacto ul li:hover i {
+    fill: var(--iContactoColor);
+    color: var(--iContactoColor);
+    filter: drop-shadow(0px 0px 12px var(--iContactoColor));
+
+}
+
+.contacto ul li:hover span {
+    color: #FFFFFF;
+}
+
+
+
+/*-----------------FIN-------------*/
 
 #mian-contenido::before {
     content: "";
@@ -323,6 +390,7 @@ body {
     background-color: #000;
     border-top-left-radius: 1.25rem;
     border-top-right-radius: 1.25rem;
+    aspect-ratio: 4/3;
 }
 
 
@@ -366,10 +434,12 @@ body {
     justify-content: space-around;
 
 }
-.enlaces__proyectos{
+
+.enlaces__proyectos {
     width: 50px;
     padding: 5px;
 }
+
 .enlaces__proyectos i {
     font-size: 25px;
 }

@@ -73,7 +73,7 @@ const main = () => {
 
     }
 
-  
+
 
 
     const proyectosHTML = (proyectos) => {
@@ -87,7 +87,7 @@ const main = () => {
             article += `</div>`
             article += `<div class='card__data'>`
             article += `<h3 class='card__name'>${proyecto.nombre}</h3>`
-            article += `<span class='card__name'>${proyecto.real === "0" ? "(Proyecto Propio)" : "(Proyecto Real)"}</span>`
+            article += `<span class='card__name'>${proyecto.real === "0" ? "(Proyecto Propio)" : `${proyecto.empresa} - (Proyecto Real)`}</span>`
 
             article += `<p class='card__description'>${proyecto.descripcion}</p>`
             article += `<div class='card__enlances'>`
