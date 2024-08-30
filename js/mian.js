@@ -27,7 +27,7 @@ const main = () => {
     ]
 
     const proyectos = [
-        { nombre: "EDO", real: "1", empresa: "SECUAZ", img: "../img/proyectos/proyecto_edo.jpg", git: "", pagina: "https://restaurantnikkei.fr", descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. " },
+        { nombre: "EDO", real: "1", empresa: "SECUAZ", img: "../img/proyectos/proyecto_edo.jpg", git: "", pagina: "https://restaurantnikkei.fr", descripcion: "Dessarrollo de una página web, con el objetivo de promover sus servicios de manera efectiva. La web fue creada utilizando WordPress y Elementor." },
 
         { nombre: "The Simpson", real: "0", empresa: "", img: "../img/proyectos/proyecto_simpson.jpg", git: "https://github.com/kevin2561/theSimpson", pagina: "https://musical-peony-5c424d.netlify.app/", descripcion: "Un sitio web de Los Simpsons que fue creado ya que me gustó mucho la serie desde que era un niño y también fue una buena manera de practicar mis conocimientos de js y el framework React que utilicé para crear este sitio web." },
 
@@ -87,7 +87,7 @@ const main = () => {
             article += `</div>`
             article += `<div class='card__data'>`
             article += `<h3 class='card__name'>${proyecto.nombre}</h3>`
-            article += `<span class='card__name'>${proyecto.real === "0" ? "(Proyecto Propio)" : `${proyecto.empresa} - (Proyecto Real)`}</span>`
+            article += `<span class='card__name'>${proyecto.real === "0" ? "(Proyecto Propio)" : `Empresa ${proyecto.empresa} - (Proyecto Real)`}</span>`
 
             article += `<p class='card__description'>${proyecto.descripcion}</p>`
             article += `<div class='card__enlances'>`
