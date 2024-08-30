@@ -43,10 +43,10 @@ const main = () => {
     const tecnologiasHTML = (tecnologias) => {
         let div = "";
 
-        tecnologias.forEach((item, index) => {
-            div += `<div class='item item${index + 1}' style='--icon-color: ${item.color};'>`
-            div += `<div class='icono-tecnologia'>${item.icono}</div>`
-            div += `<div class='nombre-tecnologia'><span>${item.nombre}<span></div>`
+        tecnologias.forEach((tecnologia, index) => {
+            div += `<div class='item item${index + 1}' style='--icon-color: ${tecnologia.color};'>`
+            div += `<div class='icono-tecnologia'>${tecnologia.icono}</div>`
+            div += `<div class='nombre-tecnologia'><span>${tecnologia.nombre}<span></div>`
             div += `</div>`
         });
 
