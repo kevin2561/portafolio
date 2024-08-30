@@ -105,25 +105,30 @@ const main = () => {
 
 
 
-    cv.addEventListener("click", async function () {
+    // cv.addEventListener("click", async function () {
+    //     const url = "img/CV_AZUL4.pdf";
+    //     try {
+    //         const response = await fetch(url);
+    //         const blob = await response.blob();
+    //         const fileURL = URL.createObjectURL(blob);
+    //         console.log(blob)
+    //         console.log(fileURL)
+
+    //         window.open(fileURL);
+
+
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+
+
+
+    // })
+    cv.addEventListener("click", function () {
         const url = "img/CV_AZUL4.pdf";
-        try {
-            const response = await fetch(url);
-            const blob = await response.blob();
-            const fileURL = URL.createObjectURL(blob);
-            console.log(blob)
-            console.log(fileURL)
+        window.open(url, '_blank');
+    });
 
-            window.open(fileURL);
-
-
-        } catch (error) {
-            console.error(error);
-        }
-
-
-
-    })
 
     const carrusel = () => {
         /*=============== SWIPER JS ===============*/
