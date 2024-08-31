@@ -19,7 +19,32 @@
 </head>
 
 <body>
-    <header>
+    <header class="sticky-top">
+        <nav id="menu-mian" class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <svg class="astronauta-header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M370.7 96.1C346.1 39.5 289.7 0 224 0S101.9 39.5 77.3 96.1C60.9 97.5 48 111.2 48 128l0 64c0 16.8 12.9 30.5 29.3 31.9C101.9 280.5 158.3 320 224 320s122.1-39.5 146.7-96.1c16.4-1.4 29.3-15.1 29.3-31.9l0-64c0-16.8-12.9-30.5-29.3-31.9zM336 144l0 16c0 53-43 96-96 96l-32 0c-53 0-96-43-96-96l0-16c0-26.5 21.5-48 48-48l128 0c26.5 0 48 21.5 48 48zM189.3 162.7l-6-21.2c-.9-3.3-3.9-5.5-7.3-5.5s-6.4 2.2-7.3 5.5l-6 21.2-21.2 6c-3.3 .9-5.5 3.9-5.5 7.3s2.2 6.4 5.5 7.3l21.2 6 6 21.2c.9 3.3 3.9 5.5 7.3 5.5s6.4-2.2 7.3-5.5l6-21.2 21.2-6c3.3-.9 5.5-3.9 5.5-7.3s-2.2-6.4-5.5-7.3l-21.2-6zM112.7 316.5C46.7 342.6 0 407 0 482.3C0 498.7 13.3 512 29.7 512l98.3 0 0-64c0-17.7 14.3-32 32-32l128 0c17.7 0 32 14.3 32 32l0 64 98.3 0c16.4 0 29.7-13.3 29.7-29.7c0-75.3-46.7-139.7-112.7-165.8C303.9 338.8 265.5 352 224 352s-79.9-13.2-111.3-35.5zM176 448c-8.8 0-16 7.2-16 16l0 48 32 0 0-48c0-8.8-7.2-16-16-16zm96 32a16 16 0 1 0 0-32 16 16 0 1 0 0 32z" />
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div id="enlaces-nav" class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="">Sobre mi</a>
+                        <a class="nav-link" href="">Tecnologías</a>
+                        <a class="nav-link" href="">Habilidades Blandas</a>
+                        <a class="nav-link" href="">Proyectos </a>
+                        <a class="nav-link" hre="">Contacto</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
 
     </header>
 
@@ -29,7 +54,7 @@
             <div class="row">
                 <div class="col-md-6 caja-nombre">
                     <div>
-                        <h1>KEVIN FLAVIO NOA ROMERO</h1>
+                        <h1>Kevin Flavio Noa Romero </h1>
                     </div>
                     <div>
                         <h2>Dessarrollador Full-Stack <i class="bi bi-code-slash"></i></h2>
@@ -37,7 +62,7 @@
                     <div>
 
                         <button id="cv" class="btn btn-danger"><i class="bi bi-file-earmark-text"></i> Descargar
-                            Curriculo</button>
+                            Currículo</button>
                     </div>
                     <div class="caja-gif">
                         <img src="img/user/spiderman.gif" alt="">
@@ -67,34 +92,19 @@
 
                 <div class="col-md-6  align-self-center">
                     <div class="mi-descripcion">
-                        <h1>Un poco de mi</h1>
+                        <h1>Sobre mi</h1>
                         <p>Soy una persona que se adentró en el mundo de la programación porque me fascina la forma en
                             que podemos crear aplicaciones a través de código. A medida que avanzo, me encuentro con
                             retos y problemas cada vez más complejos, lo cual me motiva a seguir investigando nuevas
                             cosas.</p>
                         <p>Me adapto fácilmente al cambio y mantengo una buena relación con mis compañeros de trabajo.
                             Además, tengo un gran deseo de seguir aprendiendo y creciendo profesionalmente.</p>
-                        <p>Actualmente, me especializo en el desarrollo web (Full Stack), pero también me apasiona ser
+                        <p>Actualmente, me especializo en el Desarrollo Web (Full Stack), pero también me apasiona ser
                             un
-                            análista de datos (ETL, Cubos, etc.). Anhelo convertirme en un gran profesional en ambas
+                            Análista de Datos (ETL, Cubos, etc.). Anhelo convertirme en un gran profesional en ambas
                             áreas.</p>
                     </div>
-                    <div class="contacto">
-                        <h1>Contacto:</h1>
 
-                        <ul>
-                            <li style="--iContactoColor:#25D366;"><a href="https://wa.me/907551417" target="_blank"><i
-                                        class="bi bi-whatsapp"></i>
-                                    <span>907551417</span></a></li>
-                            <li style="--iContactoColor:#1DA1F2;"><a href="mailto:kevinnoa02@gmail.com"
-                                    target="_blank"><i
-                                        class="bi bi-envelope-at"></i><span>kevinnoa02@gmail.com</span></a></li>
-                            <li style="--iContactoColor:#181717;"><a href="https://github.com/kevin2561"
-                                    target="_blank"><i class="bi bi-github"></i><span>kevin2561</span></a></li>
-
-
-                        </ul>
-                    </div>
 
                 </div>
             </div>
@@ -163,7 +173,7 @@
                             class="bi bi-envelope-at"></i><span>kevinnoa02@gmail.com</span></a>
                 </div>
                 <div class="contacto-enlaces">
-                    <a style="--iContactoColor:#181717;" href="https://github.com/kevin2561" target="_blank"><i
+                    <a style="--iContactoColor:#EF820D;" href="https://github.com/kevin2561" target="_blank"><i
                             class="bi bi-github"></i><span>kevin2561</span></a>
                 </div>
             </section>

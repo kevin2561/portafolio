@@ -42,7 +42,6 @@ body {
     background-color: #000;
     color: #fff;
 
-
 }
 
 .espaciado {
@@ -50,9 +49,66 @@ body {
 }
 
 .espaciado-arriba-abajo {
-    padding-top: 8%;
-    padding-bottom: 8%;
+    padding-top: 8% !important;
+    padding-bottom: 8% !important;
 }
+
+/*-----------NAV-------------*/
+.bg-body-tertiary {
+     --bs-bg-opacity: 1; 
+    background-color: #000000f5 !important;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+}
+
+.astronauta-header {
+    width: 30px;
+    height: 30px;
+    fill: var(--color-blanco);
+}
+
+
+#enlaces-nav a {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: var(--color-gris);
+}
+
+#enlaces-nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0.5rem;
+    bottom: 0;
+    background-color: var(--color-blanco);
+    transition: width 0.7s ease;
+}
+
+
+
+#enlaces-nav a:hover {
+    color: var(--color-blanco);
+}
+
+#enlaces-nav a:hover::after {
+    width: 50%;
+}
+
 
 /*---------HEADER-------------*/
 #inicio-main {
@@ -65,10 +121,10 @@ body {
     position: relative;
     overflow: hidden;
     mask-image: linear-gradient(black 95%, transparent);
-
-
 }
 
+
+/*--------FIN----------------*/
 #inicio-main::after,
 #inicio-main::before {
     content: "";
@@ -88,6 +144,22 @@ body {
 
 .caja-nombre {
     padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+}
+
+.caja-nombre h1 {
+
+    font-size: 5rem;
+    font-weight: 600;
+    text-shadow: 4px 4px 4px #000;
+}
+
+
+.caja-nombre h2 {
+    font-size: 2rem;
+    text-shadow: 4px 4px 4px #000000;
 }
 
 .caja-gif {
@@ -108,7 +180,7 @@ body {
 }
 
 #cv {
-    padding: 6px 16px;
+    padding: 10px 20px;
     border-radius: 50px;
 }
 
@@ -149,66 +221,11 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     font-size: 20px;
     text-align: justify;
-
-
 }
-
-.contacto {}
-
-
-
-.contacto ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.contacto ul li {
-    margin-bottom: 10px;
-
-}
-
-.contacto ul li a {
-    text-decoration: none;
-    color: var(--color-blanco);
-    margin-right: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.contacto ul li a i {
-    font-size: 35px;
-    margin-right: 10px;
-}
-
-.contacto span {
-    color: var(--color-gris);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    font-size: 20px;
-}
-
-.contacto ul li:hover i {
-    fill: var(--iContactoColor);
-    color: var(--iContactoColor);
-    filter: drop-shadow(0px 0px 12px var(--iContactoColor));
-
-}
-
-.contacto ul li:hover span {
-    color: #FFFFFF;
-}
-
-
 
 /*-----------------FIN-------------*/
 
-
+/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M370.7 96.1C346.1 39.5 289.7 0 224 0S101.9 39.5 77.3 96.1C60.9 97.5 48 111.2 48 128l0 64c0 16.8 12.9 30.5 29.3 31.9C101.9 280.5 158.3 320 224 320s122.1-39.5 146.7-96.1c16.4-1.4 29.3-15.1 29.3-31.9l0-64c0-16.8-12.9-30.5-29.3-31.9zM336 144l0 16c0 53-43 96-96 96l-32 0c-53 0-96-43-96-96l0-16c0-26.5 21.5-48 48-48l128 0c26.5 0 48 21.5 48 48zM189.3 162.7l-6-21.2c-.9-3.3-3.9-5.5-7.3-5.5s-6.4 2.2-7.3 5.5l-6 21.2-21.2 6c-3.3 .9-5.5 3.9-5.5 7.3s2.2 6.4 5.5 7.3l21.2 6 6 21.2c.9 3.3 3.9 5.5 7.3 5.5s6.4-2.2 7.3-5.5l6-21.2 21.2-6c3.3-.9 5.5-3.9 5.5-7.3s-2.2-6.4-5.5-7.3l-21.2-6zM112.7 316.5C46.7 342.6 0 407 0 482.3C0 498.7 13.3 512 29.7 512l98.3 0 0-64c0-17.7 14.3-32 32-32l128 0c17.7 0 32 14.3 32 32l0 64 98.3 0c16.4 0 29.7-13.3 29.7-29.7c0-75.3-46.7-139.7-112.7-165.8C303.9 338.8 265.5 352 224 352s-79.9-13.2-111.3-35.5zM176 448c-8.8 0-16 7.2-16 16l0 48 32 0 0-48c0-8.8-7.2-16-16-16zm96 32a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"/></svg> */
 /*-----------------TECNOLOGIAS -------------*/
 #tecnologias-main {
     text-align: center;
@@ -477,8 +494,10 @@ body {
 }
 
 .enlaces__proyectos i {
-    font-size: 25px;
+    font-size: 28px;
     color: #fff;
+    padding: 10px;
+    /* background: red; */
 }
 
 /* Swiper class */
@@ -517,7 +536,7 @@ body {
 
 
 /*---------------------CONTACTO--------------------*/
-#contacto-main{
+#contacto-main {
     text-align: center;
 }
 
@@ -528,7 +547,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px 50px;
-    
+
 }
 
 #contacto .contacto-enlaces {
@@ -586,6 +605,18 @@ body {
 
 /* Media query para pantallas muy pequeñas */
 @media (max-width: 480px) {
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        flex-direction: row;
+        padding: 8px 20px;
+    }
+
     #inicio-main .row {
         --bs-gutter-x: 1.5rem;
         --bs-gutter-y: 0;
@@ -596,6 +627,22 @@ body {
         margin-left: calc(-.5* var(--bs-gutter-x));
         flex-direction: column-reverse;
     }
+    #enlaces-nav a:hover::after {
+        width: 10%;
+    }
+
+    .caja-nombre {
+        text-align: center;
+    }
+
+    .caja-nombre h1 {
+
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-shadow: 4px 4px 4px #000;
+        text-align: center;
+    }
+
     #img-space {
         width: 100%;
         display: none;

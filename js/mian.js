@@ -38,6 +38,8 @@ const main = () => {
         { nombre: "CRUD Gestor de Cuentas", real: "0", empresa: "", img: "../img/proyectos/proyecto_sistemacuentas.jpg", git: "https://github.com/kevin2561/CRUD-Gestor-de-Cuentas.git", pagina: "", descripcion: "Este proyecto fue creado para administrar las ventas del pequeño negocio de mi padre, permitiendo registrar, consultar y editar reportes de ventas. Utilicé HTML, CSS, JavaScript y MySQL para desarrollar la solución." },
     ]
 
+    let enlaces = ["sobre-mi", "tecnologias-main", "habilidades-blandas", "proyectos-main", "contacto-main"]
+
     //400x300
 
     const tecnologiasHTML = (tecnologias) => {
@@ -74,8 +76,6 @@ const main = () => {
     }
 
 
-
-
     const proyectosHTML = (proyectos) => {
         let article = ``
 
@@ -100,9 +100,6 @@ const main = () => {
 
 
     }
-
-
-
 
 
     // cv.addEventListener("click", async function () {
@@ -160,10 +157,26 @@ const main = () => {
     }
 
 
+    const enlacesMenu = () => {
+        let a = document.querySelectorAll("#enlaces-nav a");
+
+        a.forEach((enlace, index) => {
+            enlace.addEventListener("click", (e) => {
+                e.preventDefault(); // Evita que se agregue el # en la URL
+
+                // Desplazar suavemente al elemento
+                const targetElement = document.getElementById(enlaces[index]);
+                //console.log(e)
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            });
+        });
+    }
+
     tecnologiasHTML(tecnologias)
     habilidadBlandasHTML(habilidadBlandas)
     proyectosHTML(proyectos)
     carrusel()
+    enlacesMenu()
 
 
 
