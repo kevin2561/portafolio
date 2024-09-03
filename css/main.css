@@ -162,6 +162,11 @@ body {
     text-shadow: 4px 4px 4px #000000;
 }
 
+#cv {
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
 .caja-gif {
     display: flex;
     flex-direction: row;
@@ -170,25 +175,44 @@ body {
 }
 
 .caja-gif img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     mask-image: linear-gradient(transparent, black 20%);
 }
 
-#caja-img-space {
-    border-radius: 50%;
-}
 
-#cv {
-    padding: 10px 20px;
-    border-radius: 50px;
+
+#caja-img-space {
+    position: relative;
+    height: 50vh;
+    /* Asegúrate de que el contenedor tenga suficiente altura */
+
 }
 
 #img-space {
-    width: 85%;
+    position: absolute;
+    width: 100%;
+    top: -90%;
+    /* Mueve la imagen 20% por encima del borde superior del contenedor */
+    right: 10%;
+    animation: mover-astronauta-saludando 5s linear infinite;
+    z-index: 999999999;
 }
 
+@keyframes mover-astronauta-saludando {
+    0% {
+        top: -30%;
+    }
 
+    50% {
+        top: 20%;
+        /* Ajusta el valor según el rango deseado */
+    }
+
+    100% {
+        top: -30%;
+    }
+}
 
 /*-----------------FIN-------------*/
 
@@ -582,6 +606,8 @@ body {
 
 
 } */
+#contacto-main {}
+
 #formulario-contacto {
     width: 100%;
 }
@@ -607,6 +633,7 @@ body {
     transition: .3s ease-in-out;
     width: 100%;
 }
+
 #formulario-contacto div .inputs:focus {
     background-color: var(--color-blanco);
     border: 1px solid var(--color-blanco) !important;
@@ -618,6 +645,11 @@ body {
     color: var(--color-negro);
 }
 
+#mensaje {
+    background-color: red;
+    min-height: 200px;
+}
+
 #btn-enviar {
     background-color: var(--color-negro);
     color: var(--color-blanco);
@@ -627,19 +659,58 @@ body {
     font-weight: 700;
     margin-top: 25px;
     padding: 7px 24px;
-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
 
 }
-#btn-enviar:hover{
+
+#btn-enviar:hover {
     background-color: var(--color-blanco);
     border: 1px solid var(--color-blanco) !important;
     color: var(--color-negro);
 
 }
 
-#mensaje{
+#contenedor-resultado {
     display: none;
+}
+
+#contenedor-resultado span {
+    text-shadow: 4px 4px 4px black;
+    font-size: 20px;
+}
+
+#contenedor-img-astronauta-relajado {
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    z-index: 999999;
+}
+
+#contenedor-img-astronauta-relajado img {
+    position: absolute;
+    width: 85%;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    animation: mover-astronauta-relajado 5s linear infinite;
+}
+
+@keyframes mover-astronauta-relajado {
+    0% {
+        top: 0%;
+        /* Comienza en el lado derecho */
+    }
+
+    50% {
+        top: 50%;
+        /* Salta de vuelta al lado derecho instantáneamente */
+    }
+
+    100% {
+        top: 0%;
+        /* Se prepara para el próximo ciclo */
+    }
 }
 
 /*------------------FIN----------------------*/
@@ -703,10 +774,10 @@ transition: all 0.3s ease;
         text-align: center;
     }
 
-    #img-space {
-        width: 100%;
+    #caja-img-space {
         display: none;
     }
+
 
     .caja-icon {
         flex: 1 1 100%;
