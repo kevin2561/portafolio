@@ -55,7 +55,7 @@ body {
 
 /*-----------NAV-------------*/
 .bg-body-tertiary {
-     --bs-bg-opacity: 1; 
+    --bs-bg-opacity: 1;
     background-color: #000000f5 !important;
 }
 
@@ -536,7 +536,7 @@ body {
 
 
 /*---------------------CONTACTO--------------------*/
-#contacto-main {
+/* #contacto-main {
     text-align: center;
 }
 
@@ -581,6 +581,65 @@ body {
     filter: drop-shadow(0px 0px 5px var(--iContactoColor));
 
 
+} */
+#formulario-contacto {
+    width: 100%;
+}
+
+#formulario-contacto div {
+    gap: 20px 0px;
+}
+
+#formulario-contacto div .inputs::placeholder {
+    color: var(--color-blanco);
+}
+
+#formulario-contacto div .inputs {
+    background: var(--color-negro);
+    border: 1px solid hsla(0, 0%, 100%, .5);
+    border-radius: 20px;
+    color: var(--color-blanco);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: .8px;
+    margin: 0 0 8px;
+    padding: 18px 26px;
+    transition: .3s ease-in-out;
+    width: 100%;
+}
+#formulario-contacto div .inputs:focus {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-blanco) !important;
+    color: var(--color-negro);
+
+}
+
+#formulario-contacto div .inputs:focus::placeholder {
+    color: var(--color-negro);
+}
+
+#btn-enviar {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    border-radius: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 25px;
+    padding: 7px 24px;
+transition: all 0.3s ease;
+    position: relative;
+
+}
+#btn-enviar:hover{
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-blanco) !important;
+    color: var(--color-negro);
+
+}
+
+#mensaje{
+    display: none;
 }
 
 /*------------------FIN----------------------*/
@@ -627,6 +686,7 @@ body {
         margin-left: calc(-.5* var(--bs-gutter-x));
         flex-direction: column-reverse;
     }
+
     #enlaces-nav a:hover::after {
         width: 10%;
     }
