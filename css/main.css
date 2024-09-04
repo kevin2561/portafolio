@@ -52,7 +52,10 @@ body {
     padding-top: 8% !important;
     padding-bottom: 8% !important;
 }
-
+.h1s{
+    font-size: 3rem;
+    line-height: 1.5;
+}
 /*-----------NAV-------------*/
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
@@ -123,8 +126,6 @@ body {
     mask-image: linear-gradient(black 95%, transparent);
 }
 
-
-/*--------FIN----------------*/
 #inicio-main::after,
 #inicio-main::before {
     content: "";
@@ -146,7 +147,7 @@ body {
     padding-top: 5%;
     display: flex;
     flex-direction: column;
-    gap: 10px 0px;
+    gap: 20px 0px;
 }
 
 .caja-nombre h1 {
@@ -172,6 +173,7 @@ body {
     flex-direction: row;
     align-content: center;
     justify-content: center;
+    user-select: none;
 }
 
 .caja-gif img {
@@ -185,6 +187,7 @@ body {
 #caja-img-space {
     position: relative;
     height: 50vh;
+    user-select: none;
     /* Asegúrate de que el contenedor tenga suficiente altura */
 
 }
@@ -685,6 +688,7 @@ body {
     min-height: 500px;
     position: relative;
     z-index: 999999;
+    user-select: none;
 }
 
 #contenedor-img-astronauta-relajado img {
@@ -713,6 +717,65 @@ body {
     }
 }
 
+/*------------------FIN----------------------*/
+
+/*------------------FOOTER----------------------*/
+#footer-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-negro);
+    gap: 10px 0px;
+    padding: 35px 0px;
+
+}
+
+#footer-main .iconos-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 10px;
+
+}
+
+.iconos-footer .contacto-enlaces {
+    padding: 5px 32px;
+   
+}
+
+.iconos-footer .contacto-enlaces a {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 10px;
+    text-decoration: none;
+    color: var(--color-gris);
+}
+
+.iconos-footer .contacto-enlaces i {
+    color: var(--color-blanco);
+    font-size: 40px;
+}
+
+.iconos-footer .contacto-enlaces a:hover {
+    color: var(--color-blanco);
+}
+
+.iconos-footer .contacto-enlaces a:hover i {
+    color: var(--iContactoColor);
+    transform: scale(1.3);
+
+} 
+
+.linea-footer {
+    background-color: #d1d1d142;
+    height: 0.5px;
+    width: 100%;
+}
 /*------------------FIN----------------------*/
 
 
