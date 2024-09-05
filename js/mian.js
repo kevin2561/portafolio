@@ -187,10 +187,18 @@ const main = () => {
                     .then(() => {
                         resultado.innerText = "¡Mensaje Enviado Exitosamente!";
                         resultado.style.color = "#15fd15";
+                        setTimeout(() => {
+                            contenedorResultado.style.display = "none";
+
+                        }, 8000);
                     }, (error) => {
                         resultado.innerText = "Hubo un error al enviar el mensaje. Intente nuevamente.";
                         resultado.style.color = "#ff0000"
                         console.log(error)
+                        setTimeout(() => {
+                            contenedorResultado.style.display = "none";
+
+                        }, 8000);
 
                     });
             });
