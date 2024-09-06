@@ -257,8 +257,51 @@ body {
 /*-----------------TECNOLOGIAS -------------*/
 #tecnologias-main {
     text-align: center;
+    width: 100%;
+}
+#carrusel-tecnologias{
+    width: 100%;
+    display: flex;
+    background: #fefefe3d;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 15px;
+    gap: 30px 20px;
+
+}
+#carrusel-tecnologias .contenedor-cd-tecnologia{
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0px;
+    justify-content: space-around;
+    align-content: stretch;
+
+
+}
+#carrusel-tecnologias .contenedor-cd-tecnologia svg{
+}
+.contenedor-cd-svg {
+    padding: 5px;
+}
+.contenedor-cd-svg  svg{
+    width: 75px;
+    height: 75px;
+    filter: drop-shadow(0px 0px 10px var(--icon-color));
+
+
+}
+.txt-nombre-nivel{
+    background-color: var(--color-negro);
+    padding: 10px 30px;
+    border-radius: 50px;
 }
 
+/*
 .wrapper {
     width: 100%;
     max-width: 1536px;
@@ -312,7 +355,7 @@ body {
     text-align: center;
     padding: 10px 30px;
     border-radius: 8px;
-}
+} */
 
 /*--------------------FIN-------------------------*/
 
