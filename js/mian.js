@@ -69,16 +69,12 @@ const main = () => {
                     div += `<article class='contenedor-cd-tecnologia' data-nivel='${tecnologia.level}'   style='--icon-color: ${tecnologia.color};'>`
                     div += `<div class='contenedor-cd-svg'>${tecnologia.icono}</div>`
                     div += `<div><span  class='txt-nombre-nivel'>${tecnologia.nombre}</span></div>`
-
                     div += `</article>`
-
-
                 })
+
         document.getElementById("carrusel-tecnologias").innerHTML = div;
         const cajaTecnologia = document.querySelectorAll("#carrusel-tecnologias .contenedor-cd-tecnologia")
         const cajaNombreNivel = document.querySelectorAll("#carrusel-tecnologias .txt-nombre-nivel")
-
-
 
         cajaTecnologia.forEach((element, index) => {
             const nombreTecnologia = cajaTecnologia[index].innerText;
@@ -94,8 +90,6 @@ const main = () => {
             element.addEventListener("mouseout", function (e) {
                 e.preventDefault();
                 cajaNombreNivel[index].innerText = nombreTecnologia
-                //    cajaNombreNivel[index].style.backgroundColor= "-var(--color-negro)";
-                // cajaNombreNivel[index].style.color= "var(--color-blanco)"
                 cajaNombreNivel[index].classList.remove("mouseOver")
 
 
@@ -105,7 +99,6 @@ const main = () => {
 
 
     }
-    tecnologiasHTML2(tecnologias)
 
     const habilidadBlandasHTML = (habilidadBlandas) => {
         let div = "";
@@ -187,12 +180,12 @@ const main = () => {
 
                 // Desplazar suavemente al elemento
                 const targetElement = document.getElementById(enlaces[index]);
-                console.log(enlace)
+                //console.log(enlace)
                 targetElement.scrollIntoView({ behavior: "smooth" });
             });
         });
     }
-   
+
 
     // cv.addEventListener("click", async function () {
     //     const url = "img/CV_AZUL4.pdf";
@@ -217,9 +210,10 @@ const main = () => {
         const url = "img/CV_AZUL4.pdf";
         window.open(url, '_blank');
     });
+
     menuHome.addEventListener("click", function (e) {
         e.preventDefault();
-       // let bodyAltura = document.body.clientHeight
+        // let bodyAltura = document.body.clientHeight
         window.scrollTo({
             top: 0,
             behavior: "smooth",
@@ -273,16 +267,17 @@ const main = () => {
         })
 
     }
-    const ad = () => {
-        const mainTecnologia = document.getElementById("tecnologias-main");
-        console.log(mainTecnologia.clientHeight) //653
-        console.log(document.body.clientHeight)  //4321
-        console.log(window.innerHeight) //512
+    // const ad = () => {
+    //     const mainTecnologia = document.getElementById("tecnologias-main");
+    //     console.log(mainTecnologia.clientHeight) //653
+    //     console.log(document.body.clientHeight)  //4321
+    //     console.log(window.innerHeight) //512
 
-    }
-    ad()
+    // }
+    // ad()
+    console.log(Math.floor(document.body.clientHeight / 2))
 
-    // tecnologiasHTML(tecnologias);
+    tecnologiasHTML2(tecnologias)
     habilidadBlandasHTML(habilidadBlandas);
     proyectosHTML(proyectos);
     carrusel();
