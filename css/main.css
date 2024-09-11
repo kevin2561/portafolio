@@ -357,7 +357,7 @@ body {
     margin: 0px 3px;
     gap: 0;
     position: relative;
-    border: 2px solid red;
+    border: 2px solid #D4AF37;
     border-radius: 10px;
 
 }
@@ -380,21 +380,32 @@ body {
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
-    background-color: #0000003b;
+    background-color: rgba(0, 0, 0, 0.40);
     display: flex;
     align-items: center;
     text-align: center;
     opacity: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0px 5px;
+
+}
+.habilidades-blandas-nombre i {
+    font-size: 20px;
+
 }
 
-.habilidades-blandas-nombre h1 {
+.habilidades-blandas-nombre span {
     color: var(--color-blanco);
     font-size: 20px;
-    text-shadow: 2px 0px 0px #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
     font-weight: 600;
-    padding: 10px 15px;
+    padding: 10px 5px;
+
 
 }
 

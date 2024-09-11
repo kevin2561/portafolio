@@ -19,12 +19,12 @@ const main = () => {
 
     ];
     const habilidadBlandas = [
-        { img: "img/habilidades blandas/trabajo-equipo.jpg", nombre: "Trabajo en Equipo" },
-        { img: "img/habilidades blandas/responsabilidad.jpg", nombre: "Responsabilidad" },
-        { img: "img/habilidades blandas/paciencia.jpg", nombre: "Paciencia" },
-        { img: "img/habilidades blandas/comunicacion.jpg", nombre: "Comunicación" },
-        { img: "img/habilidades blandas/iniciativa.jpg", nombre: "Iniciativa" },
-        { img: "img/habilidades blandas/ganas-aprender.jpg", nombre: "Ganas de aprender" },
+        { img: "img/habilidades blandas/trabajo-equipo.jpg", nombre: "Trabajo en Equipo", icono: "people-fill" },
+        { img: "img/habilidades blandas/responsabilidad.jpg", nombre: "Responsabilidad", icono: "person-check" },
+        { img: "img/habilidades blandas/paciencia.jpg", nombre: "Paciencia", icono: "hourglass-split" },
+        { img: "img/habilidades blandas/comunicacion.jpg", nombre: "Comunicación", icono: "chat-dots" },
+        { img: "img/habilidades blandas/iniciativa.jpg", nombre: "Iniciativa", icono: "lightbulb-fill" },
+        { img: "img/habilidades blandas/ganas-aprender.jpg", nombre: "Ganas de aprender", icono: "book" },
     ]
 
     const proyectos = [
@@ -112,12 +112,12 @@ const main = () => {
         habilidadBlandas.map((habilidad) => {
             div += `<div class='caja-habilidades-blandas'> `
             div += `<img src='${habilidad.img}' alt='${habilidad.nombre}' /> `
-            div += `<div class='habilidades-blandas-nombre'><h1>${habilidad.nombre}</h1> </div>`
+            div += `<div class='habilidades-blandas-nombre'><i class='bi bi-${habilidad.icono}'></i><span>${habilidad.nombre}</span> </div>`
             div += `</div>`
 
         })
 
-        contenedorIconos.innerHTML = div;
+        contenedorIconos.innerHTML = div; 
 
     }
 
