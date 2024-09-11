@@ -806,6 +806,10 @@ body {
         font-size: 2.5rem;
     }
 
+    .espaciado-arriba-abajo {
+        padding-top: 20% !important;
+        padding-bottom: 15% !important;
+    }
     #inicio-main .row {
         --bs-gutter-x: 1.5rem;
         --bs-gutter-y: 0;
@@ -893,5 +897,15 @@ body {
         align-items: flex-start;
 
 
+    }
+    .contenedor-astronauta-formulario{
+        order: 1;
+    }
+    #caja-img-mi{
+        order: 2;
+    }
+    #contenedor-img-astronauta-relajado {
+        min-height: 350px;
+ 
     }
 }
