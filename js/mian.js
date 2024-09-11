@@ -69,12 +69,16 @@ const main = () => {
                     div += `<article class='contenedor-cd-tecnologia' data-nivel='${tecnologia.level}'   style='--icon-color: ${tecnologia.color};'>`
                     div += `<div class='contenedor-cd-svg'>${tecnologia.icono}</div>`
                     div += `<div><span  class='txt-nombre-nivel'>${tecnologia.nombre}</span></div>`
-                    div += `</article>`
-                })
 
+                    div += `</article>`
+
+
+                })
         document.getElementById("carrusel-tecnologias").innerHTML = div;
         const cajaTecnologia = document.querySelectorAll("#carrusel-tecnologias .contenedor-cd-tecnologia")
         const cajaNombreNivel = document.querySelectorAll("#carrusel-tecnologias .txt-nombre-nivel")
+
+
 
         cajaTecnologia.forEach((element, index) => {
             const nombreTecnologia = cajaTecnologia[index].innerText;
@@ -90,6 +94,8 @@ const main = () => {
             element.addEventListener("mouseout", function (e) {
                 e.preventDefault();
                 cajaNombreNivel[index].innerText = nombreTecnologia
+                //    cajaNombreNivel[index].style.backgroundColor= "-var(--color-negro)";
+                // cajaNombreNivel[index].style.color= "var(--color-blanco)"
                 cajaNombreNivel[index].classList.remove("mouseOver")
 
 
@@ -106,7 +112,7 @@ const main = () => {
         habilidadBlandas.map((habilidad) => {
             div += `<div class='caja-habilidades-blandas'> `
             div += `<img src='${habilidad.img}' alt='${habilidad.nombre}' /> `
-            div += `<div class='habilidades-blandas-nombre'> <h1>${habilidad.nombre}</h1> </div>`
+            div += `<div class='habilidades-blandas-nombre'><h1>${habilidad.nombre}</h1> </div>`
             div += `</div>`
 
         })
@@ -180,7 +186,7 @@ const main = () => {
 
                 // Desplazar suavemente al elemento
                 const targetElement = document.getElementById(enlaces[index]);
-                //console.log(enlace)
+                console.log(enlace)
                 targetElement.scrollIntoView({ behavior: "smooth" });
             });
         });
@@ -210,7 +216,6 @@ const main = () => {
         const url = "img/CV_AZUL4.pdf";
         window.open(url, '_blank');
     });
-
     menuHome.addEventListener("click", function (e) {
         e.preventDefault();
         // let bodyAltura = document.body.clientHeight
@@ -267,22 +272,23 @@ const main = () => {
         })
 
     }
-    // const ad = () => {
-    //     const mainTecnologia = document.getElementById("tecnologias-main");
-    //     console.log(mainTecnologia.clientHeight) //653
-    //     console.log(document.body.clientHeight)  //4321
-    //     console.log(window.innerHeight) //512
+    const ad = () => {
+        const mainTecnologia = document.getElementById("tecnologias-main");
+        console.log(mainTecnologia.clientHeight) //653
+        console.log(document.body.clientHeight)  //4321
+        console.log(window.innerHeight) //512
 
-    // }
-    // ad()
-    console.log(Math.floor(document.body.clientHeight / 2))
+    }
+    ad()
 
-    tecnologiasHTML2(tecnologias)
+    // tecnologiasHTML(tecnologias);
     habilidadBlandasHTML(habilidadBlandas);
     proyectosHTML(proyectos);
     carrusel();
     enlacesMenu();
     formContacto();
+    tecnologiasHTML2(tecnologias)
+
 
 
 
