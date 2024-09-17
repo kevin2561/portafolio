@@ -132,7 +132,7 @@ const main = () => {
             article += `<p class='card__description'>${proyecto.descripcion}</p>`
             article += `<div class='card__enlances'>`
             article += `${proyecto.git ? `<div class='enlaces__proyectos'><a href=${proyecto.git}  target='_blank' title='Ver Código'><i class='bi bi-github'></i></a></div>` : ``}`
-            article += `${proyecto.pagina ? `<div class='enlaces__proyectos'><a href=${proyecto.pagina} target='_blank' title='Ver Página'><i class='bi bi-eye'></i></a></div>` : ``}`
+            article += `${proyecto.pagina ? `<div class='enlaces__proyectos'><a href=${proyecto.pagina} target='_blank' title='Ver Proyecto'><i class='bi bi-eye'></i></a></div>` : ``}`
             article += `</div></div>`
             article += `</article>`
         })
