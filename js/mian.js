@@ -68,7 +68,6 @@ const main = () => {
                     div += `<article class='contenedor-cd-tecnologia' data-nivel='${tecnologia.level}'   style='--icon-color: ${tecnologia.color};'>`
                     div += `<div class='contenedor-cd-svg'>${tecnologia.icono}</div>`
                     div += `<div><span  class='txt-nombre-nivel'>${tecnologia.nombre}</span></div>`
-
                     div += `</article>`
 
 
@@ -93,11 +92,7 @@ const main = () => {
             element.addEventListener("mouseout", function (e) {
                 e.preventDefault();
                 cajaNombreNivel[index].innerText = nombreTecnologia
-                //    cajaNombreNivel[index].style.backgroundColor= "-var(--color-negro)";
-                // cajaNombreNivel[index].style.color= "var(--color-blanco)"
                 cajaNombreNivel[index].classList.remove("mouseOver")
-
-
 
             })
         });
@@ -245,9 +240,8 @@ const main = () => {
                     setTimeout(() => {
                         contenedorResultado.style.display = "none";
                         limpiarInputsFormulario();
-
-
                     }, 8000);
+
                 }, (error) => {
                     resultado.innerText = "Hubo un error al enviar el mensaje. Intente nuevamente.";
                     resultado.style.color = "#ff0000";

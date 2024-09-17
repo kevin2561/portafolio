@@ -16,6 +16,7 @@
     --color-gradient-start: #007bff;
     --color-gradient-end: #6c757d;
     --color-gris: #d1d1d1;
+    --color-cyan:#40E0D0;
 }
 
 ::-webkit-scrollbar {
@@ -57,9 +58,13 @@ body {
     font-size: 3rem;
     line-height: 1.5;
     color: #ffffff;
-    text-shadow: 0 0 8px rgb(249 227 227 / 80%), 0 0 15px rgb(121 131 119), 0 0 25px rgb(168 179 169 / 49%);
+    /* text-shadow: 0 0 8px rgb(249 227 227 / 80%), 0 0 15px rgb(121 131 119), 0 0 25px rgb(168 179 169 / 49%); */
     text-transform: uppercase;
     font-weight: bold;
+    text-shadow: 0px 0px 10px var(--color-cyan),
+    0px 0px 20px var(--color-cyan),
+    0px 0px 40px var(--color-cyan),
+    0px 0px 80px var(--color-cyan);
 }
 
 /*-----------NAV-------------*/
