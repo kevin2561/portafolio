@@ -16,7 +16,7 @@
     --color-gradient-start: #007bff;
     --color-gradient-end: #6c757d;
     --color-gris: #d1d1d1;
-    --color-cyan:#40E0D0;
+    --color-cyan: #40E0D0;
 }
 
 ::-webkit-scrollbar {
@@ -62,9 +62,9 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 0px 0px 10px var(--color-cyan),
-    0px 0px 20px var(--color-cyan),
-    0px 0px 40px var(--color-cyan),
-    0px 0px 80px var(--color-cyan);
+        0px 0px 20px var(--color-cyan),
+        0px 0px 40px var(--color-cyan),
+        0px 0px 80px var(--color-cyan);
 }
 
 /*-----------NAV-------------*/
@@ -399,6 +399,7 @@ body {
     gap: 0px 5px;
 
 }
+
 .habilidades-blandas-nombre i {
     font-size: 20px;
 
@@ -413,7 +414,7 @@ body {
     font-weight: 600;
     padding: 10px 5px;
 
-    
+
 }
 
 .caja-habilidades-blandas:hover {
@@ -779,7 +780,19 @@ body {
 
 
 /* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width:1024px) {
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        flex-direction: row;
+        padding: 8px 20px;
+    }
+
     .caja-icon {
         flex: 1 1 45%;
         /* Cambia el ancho para pantallas medianas */
@@ -788,12 +801,45 @@ body {
         padding: 15px;
     }
 
-    #habilidades-blandas {
-        /* display: none; */
 
+    #contenedor-habilidades {
+        width: 100%;
+        min-height: 500px;
+        max-height: 700px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 10px;
+        /* padding: 50px; */
+    }
+
+    .espaciado-arriba-abajo {
+        padding-top: 12% !important;
+        padding-bottom: 12% !important;
+    }
+
+    #enlaces-nav a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        left: 0;
+        bottom: 0;
+        background-color: var(--color-blanco);
+        transition: width 0.7s ease;
+        transform: translate(-0px, -0px);
+    }
+
+    #enlaces-nav a:hover::after {
+        width: 5%;
     }
 
 }
+
+
 
 /* Media query para pantallas muy pequeñas */
 @media (max-width: 480px) {
@@ -818,6 +864,7 @@ body {
         padding-top: 20% !important;
         padding-bottom: 15% !important;
     }
+
     #inicio-main .row {
         --bs-gutter-x: 1.5rem;
         --bs-gutter-y: 0;
@@ -892,6 +939,7 @@ body {
         /* display: none; */
 
     }
+
     #contenedor-habilidades {
         width: 100%;
         min-height: 500px;
@@ -905,6 +953,7 @@ body {
         border-radius: 10px;
         /* padding: 50px; */
     }
+
     .habilidades-blandas-nombre {
         position: absolute;
         width: 100%;
@@ -924,6 +973,7 @@ body {
         gap: 0px 5px;
         padding: 0px 5px;
     }
+
     .habilidades-blandas-nombre span {
         color: var(--color-blanco);
         font-size: 12px;
@@ -933,13 +983,16 @@ body {
         font-weight: 600;
         padding: 10px 0px;
     }
+
     .habilidades-blandas-nombre i {
         font-size: 15px;
     }
+
     .caja-habilidades-blandas:hover {
         width: 100%;
         transition: all ease-in-out 1s;
     }
+
     #contacto {
         width: 100%;
         display: flex;
@@ -951,14 +1004,17 @@ body {
 
 
     }
-    .contenedor-astronauta-formulario{
+
+    .contenedor-astronauta-formulario {
         order: 1;
     }
-    #caja-img-mi{
+
+    #caja-img-mi {
         order: 2;
     }
+
     #contenedor-img-astronauta-relajado {
         min-height: 350px;
- 
+
     }
 }
