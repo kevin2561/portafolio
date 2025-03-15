@@ -1,0 +1,32 @@
+[
+    {
+        "img": "img/habilidades blandas/trabajo-equipo.jpg",
+        "nombre": "Trabajo en Equipo",
+        "icono": "people-fill"
+    },
+    {
+        "img": "img/habilidades blandas/responsabilidad.jpg",
+        "nombre": "Responsabilidad",
+        "icono": "person-check"
+    },
+    {
+        "img": "img/habilidades blandas/paciencia.jpg",
+        "nombre": "Paciencia",
+        "icono": "hourglass-split"
+    },
+    {
+        "img": "img/habilidades blandas/comunicacion.jpg",
+        "nombre": "Comunicación",
+        "icono": "chat-dots"
+    },
+    {
+        "img": "img/habilidades blandas/iniciativa.jpg",
+        "nombre": "Iniciativa",
+        "icono": "lightbulb-fill"
+    },
+    {
+        "img": "img/habilidades blandas/ganas-aprender.jpg",
+        "nombre": "Ganas de aprender",
+        "icono": "book"
+    }
+]

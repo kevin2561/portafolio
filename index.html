@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolios</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="icon" href="img/portafolio.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 
 
@@ -19,7 +20,7 @@
 </head>
 
 <body>
-    
+    <!-- <i class="fa-brands fa-js icon-tecnologia"></i> -->
     <header class="sticky-top">
         <nav id="menu-mian" class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
@@ -80,8 +81,11 @@
         </div>
 
     </div>
-    <main id="mian-contenido" class="espaciado">
 
+
+    <!-- MAIN -->
+    <main id="mian-contenido" class="espaciado">
+        <!-- SOBRE MI -->
         <section id="sobre-mi" class="container espaciado-arriba-abajo">
             <div class="row">
                 <div id="caja-img-mi" class="col-md-6">
@@ -110,6 +114,8 @@
             </div>
         </section>
 
+
+        <!-- TECNOLOGIAS -->
         <section id="tecnologias-main" class="container espaciado-arriba-abajo">
             <h1 class="h1s">Tecnologías</h1>
             <div id="carrusel-tecnologias">
@@ -117,6 +123,7 @@
             </div>
         </section>
 
+        <!-- HABILIDADES BLANDAS -->
         <section id="habilidades-blandas" class="container espaciado-arriba-abajo">
             <div>
                 <h1 class="h1s">Habilidades Blandas</h1>
@@ -126,30 +133,15 @@
         </section>
 
 
-
-        <section id="proyectos-main" class="container containerx espaciado-arriba-abajo">
+        <!-- PROYECTOS -->
+        <!-- <section id="proyectos-main" class="container containerx espaciado-arriba-abajo">
             <div>
                 <h1 class="h1s">Proyectos</h1>
             </div>
-            <div class="card__container swiper">
-                <div class="card__content">
-                    <div id="contenedor-proyectos" class="swiper-wrapper">
-                    </div>
-                </div>
+      
+        </section> -->
 
-                <!-- Navigation buttons -->
-                <div class="swiper-button-next">
-                    <i class="ri-arrow-right-s-line"></i>
-                </div>
-
-                <div class="swiper-button-prev">
-                    <i class="ri-arrow-left-s-line"></i>
-                </div>
-
-
-            </div>
-        </section>
-
+        <!-- CONTACTO -->
         <section id="contacto-main" class="container espaciado-arriba-abajo">
 
             <div class="row">
@@ -208,6 +200,7 @@
 
     </main>
 
+    <!-- FOOTER -->
     <footer id="footer-main">
         <section class="iconos-footer">
             <div class="contacto-enlaces">
@@ -234,18 +227,13 @@
 
 
 </body>
-<script src="js/swiper-bundle.min.js"></script>
-<script data-main="scripts/main" src="js/mian.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="module" src="js/mian.js"></script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript">
     emailjs.init('mqe3ZFTtSy33EDK67')
 </script>
 
-<!-- <script data-main="scripts/main" src="scripts/require.js"></script> -->
 
 
 </html>

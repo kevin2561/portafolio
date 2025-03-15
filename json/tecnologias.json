@@ -1,0 +1,92 @@
+[
+    {
+        "nombre": "Python",
+        "color": "#306998",
+        "level": "Básico",
+        "icono": "<i class='fa-brands fa-python'></i>"
+    },
+    {
+        "nombre": "MySQL",
+        "color": "#00758F",
+        "level": "Intermedio",
+        "icono": "<i class='fa-solid fa-database'></i>"
+    },
+    {
+        "nombre": "JavaScript",
+        "color": "#F7DF1E",
+        "level": "Intermedio",
+        "icono": "<i class='fa-brands fa-js'></i>"
+    },
+    {
+        "nombre": "HTML",
+        "color": "#E44D26",
+        "level": "Intermedio",
+        "icono": "<i class='fa-brands fa-html5'></i>"
+    },
+    {
+        "nombre": "CSS",
+        "color": "#1572B6",
+        "level": "Intermedio",
+        "icono": "<i class='fa-brands fa-css3-alt'></i>"
+    },
+    {
+        "nombre": "Github",
+        "color": "#181717",
+        "level": "Intermedio",
+        "icono": "<i class='fa-brands fa-github'></i>"
+    },
+    {
+        "nombre": "React",
+        "color": "#61DAFB",
+        "level": "Intermedio",
+        "icono": "<i class='fa-brands fa-react'></i>"
+    },
+    {
+        "nombre": "Angular",
+        "color": "#DD0031",
+        "level": "Intermedio",
+        "icono": "<i class='fa-brands fa-angular'></i>"
+    },
+    {
+        "nombre": "SQL Server",
+        "color": "#A91D22",
+        "level": "Intermedio",
+        "icono": "<i class='fa-solid fa-database'></i>"
+    },
+    {
+        "nombre": "Bootstrap",
+        "color": "#563D7C",
+        "level": "Intermedio",
+        "icono": "<i class='fa-brands fa-bootstrap'></i>"
+    },
+    {
+        "nombre": "Git",
+        "color": "#F05032",
+        "level": "Intermedio",
+        "icono": "<i class='fa-brands fa-git-alt'></i>"
+    },
+    {
+        "nombre": "WordPress",
+        "color": "#21759B",
+        "level": "Intermedio",
+        "icono": "<i class='fa-brands fa-wordpress'></i>"
+    },
+    {
+        "nombre": "Power Bi",
+        "color": "#F2C811",
+        "level": "Básico",
+        "icono": "<i class='fa-brands fa-java'></i>"
+    },
+    {
+        "nombre": "Java",
+        "color": "#F2C811",
+        "level": "Básico",
+        "icono": "<i class='fa-brands fa-java'></i>"
+    },
+    {
+        "nombre": "Spring Boot",
+        "color": "#F2C811",
+        "level": "Básico",
+        "icono": "<i class='fa-brands fa-java'></i>"
+    }
+]
