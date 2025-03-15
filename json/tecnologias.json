@@ -9,7 +9,7 @@
         "nombre": "MySQL",
         "color": "#00758F",
         "level": "Intermedio",
-        "icono": "<i class='fa-solid fa-database'></i>"
+        "icono": "<i class='devicon-mysql-original'></i>"
     },
     {
         "nombre": "JavaScript",
@@ -51,7 +51,7 @@
         "nombre": "SQL Server",
         "color": "#A91D22",
         "level": "Intermedio",
-        "icono": "<i class='fa-solid fa-database'></i>"
+        "icono": "<i class='devicon-microsoftsqlserver-plain'></i>"
     },
     {
         "nombre": "Bootstrap",
@@ -75,18 +75,30 @@
         "nombre": "Power Bi",
         "color": "#F2C811",
         "level": "Básico",
-        "icono": "<i class='fa-brands fa-java'></i>"
+        "icono": "<i class='bi bi-bar-chart-fill'></i>"
     },
     {
         "nombre": "Java",
-        "color": "#F2C811",
+        "color": "#EA2D2E",
         "level": "Básico",
         "icono": "<i class='fa-brands fa-java'></i>"
     },
     {
         "nombre": "Spring Boot",
-        "color": "#F2C811",
+        "color": "#6DB33F",
         "level": "Básico",
-        "icono": "<i class='fa-brands fa-java'></i>"
+        "icono": "<i class='devicon-spring-original'></i>"
+    },
+    {
+        "nombre": "Typescript ",
+        "color": "#6DB33F",
+        "level": "Intermedio",
+        "icono": "<i class='devicon-typescript-plain'></i>"
+    },
+    {
+        "nombre": "Node JS",
+        "color": "#83CD29",
+        "level": "Básico",
+        "icono": "<i class='devicon-nodejs-plain-wordmark'></i>"
     }
 ]
