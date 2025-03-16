@@ -3,24 +3,24 @@
         "nombre": "EDO",
         "real": "1",
         "empresa": "SECUAZ",
-        "img": "../img/proyectos/proyecto_edo.jpg",
+        "img": "../img/proyectos/proyecto_EDO.jpg",
         "git": "",
         "pagina": "https://restaurantnikkei.fr",
         "descripcion": "Dessarrollo de una página web, con el objetivo de promover sus servicios de manera efectiva. La web fue creada utilizando WordPress y Elementor.",
         "herramientas":[
-            ["WordPress", ""], ["MySQL", "" ]
+            ["WordPress", "fa-brands fa-wordpress"], ["MySQL", "devicon-mysql-original" ]
         ]
     },
     {
         "nombre": "The Simpson",
         "real": "0",
         "empresa": "",
-        "img": "../img/proyectos/proyecto_simpson.jpg",
+        "img": "./../img/proyectos/proyecto_simpson.jpg",
         "git": "https://github.com/kevin2561/theSimpson",
         "pagina": "https://musical-peony-5c424d.netlify.app/",
         "descripcion": "Un sitio web de Los Simpsons que fue creado ya que me gustó mucho la serie desde que era un niño y también fue una buena manera de practicar mis conocimientos de js y el framework React que utilicé para crear este sitio web.",
         "herramientas":[
-            ["React", ""], ["MySQL", "" ], ["JavaScript",""]
+            ["React", "fa-brands fa-react"], ["MySQL", "devicon-mysql-original" ],["JavaScript", "fa-brands fa-js" ],["Bootstrap", "fa-brands fa-bootstrap" ]
         ]
     },
     {
@@ -32,7 +32,7 @@
         "pagina": "",
         "descripcion": "Una pagina web de Dota 2, creo en esta pagina porque me encanto el juego, fue uno de los juegos que mas me entretuvo y ademas fue una buena forma de practicar con js ya que en esta pagina esta hecha con js puro y un poco de jQuery.",
         "herramientas":[
-            ["WordPress", ""], ["MySQL", "" ]
+            ["JavaScript", "fa-brands fa-js"], ["Jquery", "devicon-jquery-plain" ],["Bootstrap", "fa-brands fa-bootstrap" ], ["HTML", "fa-brands fa-html5"], ["CSS", "fa-brands fa-css3-alt" ]
         ]
     },
     {
@@ -44,7 +44,7 @@
         "pagina": "",
         "descripcion": "Una pequeña aplicación que Brendia puede convertir en mp3 en la que podrás escuchar una lista de canciones.",
         "herramientas":[
-            ["WordPress", ""], ["MySQL", "" ]
+            ["HTML", "fa-brands fa-html5"], ["CSS", "fa-brands fa-css3-alt" ],["JavaScript", "fa-brands fa-js" ]
         ]
     },
     {
@@ -56,7 +56,7 @@
         "pagina": "",
         "descripcion": "Este proyecto fue creado para administrar las ventas del pequeño negocio de mi padre, permitiendo registrar, consultar y editar reportes de ventas. Utilicé HTML, CSS, JavaScript y MySQL para desarrollar la solución.",
         "herramientas":[
-            ["WordPress", ""], ["MySQL", "" ]
+            ["WordPress", "fa-brands fa-wordpress"], ["MySQL", "evicon-mysql-original" ]
         ]
     }
 ]

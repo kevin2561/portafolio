@@ -62,29 +62,36 @@ const main = () => {
 
     const proyectosHTML = (data) => {
         let div = "";
-    
+
         data.forEach((item) => {
             div += `
             <div class="swiper-slide">
-                <div class="row" style="border: 1px solid black;">
+                <div class="row py-5 px-5" style="border: 1px solid black;">
                     <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
                         <div>
-                            <img src="${item.imagen}" alt="${item.titulo}">
+                            <img src="${item.img}" alt="${item.nombre}">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="text-left">
-                            <h6>${item.titulo}</h6>
-                            <p>${item.descripcion}</p>
-                            <span>${item.tecnologias}</span>
+                            <h4 class='h4'>${item.nombre}</h4>
+                            <p class='text-md-start'>${item.descripcion}</p>
+                            <span class="d-flex flex-row justify-content-flex-start align-items-center">Tecnologias: ${item.herramientas.map((herramienta, index) =>
+                `<i class="${herramienta[1]} icons-proyectos" title="${herramienta[0]}"></i>`
+            ).join(' ')}</span>
+                <div class="proyectos-enlaces py-3">
+            ${item.git ? `<span><a href="${item.git}" target="_blank" class="px-4"><i class="bi bi-github"></i></a></span>` : ''}
+            ${item.pagina ? `<span><a href="${item.pagina}" target="_blank"><i class="bi bi-globe"></i></a></span>` : ''}
+
+                </div>
                         </div>
                     </div>
                 </div>
             </div>`;
         });
-    
+
         document.querySelector(".swiper-wrapper").innerHTML = div;
-    
+
         // **Reinicializar Swiper después de agregar contenido**
         setTimeout(() => {
             new Swiper(".mySwiper", {
@@ -102,7 +109,7 @@ const main = () => {
             });
         }, 100); // Pequeño retraso para asegurar que el DOM se haya actualizado
     };
-    
+
     leerJsonServicios("./json/proyectos.json", proyectosHTML);
 
     const enlacesMenu = () => {
