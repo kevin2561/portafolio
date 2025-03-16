@@ -3,29 +3,7 @@ import { leerJsonServicios } from "./servicios.js";
 const main = () => {
     const cv = document.getElementById("cv");
     const menuHome = document.getElementById("menu-home");
-
-
-
-    // const proyectos = [
-    //     { nombre: "EDO", real: "1", empresa: "SECUAZ", img: "../img/proyectos/proyecto_edo.jpg", git: "", pagina: "https://restaurantnikkei.fr", descripcion: "Dessarrollo de una página web, con el objetivo de promover sus servicios de manera efectiva. La web fue creada utilizando WordPress y Elementor." },
-
-    //     { nombre: "The Simpson", real: "0", empresa: "", img: "../img/proyectos/proyecto_simpson.jpg", git: "https://github.com/kevin2561/theSimpson", pagina: "https://musical-peony-5c424d.netlify.app/", descripcion: "Un sitio web de Los Simpsons que fue creado ya que me gustó mucho la serie desde que era un niño y también fue una buena manera de practicar mis conocimientos de js y el framework React que utilicé para crear este sitio web." },
-
-    //     { nombre: "Dota 2", real: "0", empresa: "", img: "../img/proyectos/proyecto_dota2.jpg", git: "https://github.com/kevin2561/dota2", pagina: "", descripcion: "Una pagina web de Dota 2, creo en esta pagina porque me encanto el juego, fue uno de los juegos que mas me entretuvo y ademas fue una buena forma de practicar con js ya que en esta pagina esta hecha con js puro y un poco de jQuery." },
-
-    //     { nombre: "App Musica", real: "0", empresa: "", img: "../img/proyectos/proyecto_appmusica.jpg", git: "https://github.com/kevin2561/appMusica", pagina: "", descripcion: "Una pequeña aplicación que Brendia puede convertir en mp3 en la que podrás escuchar una lista de canciones." },
-
-    //     { nombre: "CRUD Gestor de Cuentas", real: "0", empresa: "", img: "../img/proyectos/proyecto_sistemacuentas.jpg", git: "https://github.com/kevin2561/CRUD-Gestor-de-Cuentas.git", pagina: "", descripcion: "Este proyecto fue creado para administrar las ventas del pequeño negocio de mi padre, permitiendo registrar, consultar y editar reportes de ventas. Utilicé HTML, CSS, JavaScript y MySQL para desarrollar la solución." },
-    // ]
-
-    // El icono que aparece en la imagen se parece mucho al de "signal" o "chart-bar" en FontAwesome. Algunos nombres que podrían coincidir son:
-
-
-
     let enlaces = ["sobre-mi", "tecnologias-main", "habilidades-blandas", "proyectos-main", "contacto-main"]
-
-
-
 
     const tecnologiasHTML2 = (tecnologias) => {
         let div = "";
@@ -66,8 +44,6 @@ const main = () => {
 
     leerJsonServicios("./json/tecnologias.json", tecnologiasHTML2);
 
-
-
     const habilidadBlandasHTML = (data) => {
         let div = "";
         const contenedorIconos = document.getElementById("contenedor-habilidades");
@@ -84,8 +60,50 @@ const main = () => {
     }
     leerJsonServicios("./json/habilidadesblandas.json", habilidadBlandasHTML);
 
-
-
+    const proyectosHTML = (data) => {
+        let div = "";
+    
+        data.forEach((item) => {
+            div += `
+            <div class="swiper-slide">
+                <div class="row" style="border: 1px solid black;">
+                    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                        <div>
+                            <img src="${item.imagen}" alt="${item.titulo}">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-left">
+                            <h6>${item.titulo}</h6>
+                            <p>${item.descripcion}</p>
+                            <span>${item.tecnologias}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+        });
+    
+        document.querySelector(".swiper-wrapper").innerHTML = div;
+    
+        // **Reinicializar Swiper después de agregar contenido**
+        setTimeout(() => {
+            new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        }, 100); // Pequeño retraso para asegurar que el DOM se haya actualizado
+    };
+    
+    leerJsonServicios("./json/proyectos.json", proyectosHTML);
 
     const enlacesMenu = () => {
         let a = document.querySelectorAll("#enlaces-nav a");
@@ -101,8 +119,6 @@ const main = () => {
             });
         });
     }
-
-
 
     cv.addEventListener("click", function () {
         const url = "img/CV_AZUL4.pdf";
@@ -169,11 +185,5 @@ const main = () => {
     formContacto();
 
 
-
-
 }
 main();
-
-
-
-
