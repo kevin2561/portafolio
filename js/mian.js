@@ -66,22 +66,26 @@ const main = () => {
         data.forEach((item) => {
             div += `
             <div class="swiper-slide">
-                <div class="row py-5 px-5" style="border: 1px solid black;">
+                <div class="row py-5 px-5">
                     <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-                        <div>
-                            <img src="${item.img}" alt="${item.nombre}">
+                        <div class="proyecto-img">
+                            <img src="${item.img}" class="img-fluid" title="${item.nombre}" alt="${item.nombre}">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="text-left">
-                            <h4 class='h4'>${item.nombre}</h4>
-                            <p class='text-md-start'>${item.descripcion}</p>
-                            <span class="d-flex flex-row justify-content-flex-start align-items-center">Tecnologias: ${item.herramientas.map((herramienta, index) =>
+                            <h2 class='h2 proyecto-nombre'>${item.nombre}</h2>
+                            ${item.empresa === "" ? "" : `<h6 class='h6'><span class="proyectos-etiquetas">Empresa:</span> ${item.empresa}</h6>`}
+                            <h6 class='h6'><span class="proyectos-etiquetas">Proyecto:</span> ${item.real === "1" ? "Real" : "Propio"}</h6>
+
+                            <p class='text-md-start proyecto-descripcion'><span class="proyectos-etiquetas">Descripción:</span> ${item.descripcion}</p>
+                            <span class="d-flex flex-row justify-content-flex-start align-items-center"><span class="proyectos-etiquetas">Herramientas:</span> ${item.herramientas.map((herramienta, index) =>
                 `<i class="${herramienta[1]} icons-proyectos" title="${herramienta[0]}"></i>`
             ).join(' ')}</span>
-                <div class="proyectos-enlaces py-3">
-            ${item.git ? `<span><a href="${item.git}" target="_blank" class="px-4"><i class="bi bi-github"></i></a></span>` : ''}
-            ${item.pagina ? `<span><a href="${item.pagina}" target="_blank"><i class="bi bi-globe"></i></a></span>` : ''}
+
+                <div class="proyectos-enlaces py-4">
+    ${item.git ? `<span><a href="${item.git}" target="_blank" class="btn btn-outline-light mx-2"><i class="bi bi-github"></i> Código</a></span>` : ''}
+    ${item.pagina ? `<span><a href="${item.pagina}" target="_blank" class="btn btn-outline-light mx-2"><i class="bi bi-globe"></i> Ver Proyecto</a></span>` : ''}
 
                 </div>
                         </div>
