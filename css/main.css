@@ -520,7 +520,7 @@ body {
 .icons-proyectos:hover {
 
     transform: scale(1.2);
-    filter: drop-shadow(0 0 5px cyan);
+    filter: drop-shadow(0 0 5px #ffffff);
 }
 
 
