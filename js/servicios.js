@@ -24,7 +24,7 @@ export const leerJsonServicios = async (url, funcionHTML) => {
 
 // .icons-proyectos {
 //     display: flex;
-//     gap: 8px; /* Espacio entre los iconos */
-//     flex-wrap: wrap; /* Si no caben, se van abajo */
+//     gap: 8px; 
+//     flex-wrap: wrap; 
 //     align-items: center;
 // }

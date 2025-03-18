@@ -475,15 +475,17 @@ body {
     justify-content: center !important;
     align-items: center !important;
     border: 1px solid #ffc107;
-    height:  auto !important;
+    height: auto !important;
 
 
 }
-.proyetcto-col-imagen{
+
+.proyetcto-col-imagen {
     border: 1px solid #007bff;
 
 }
-.proyecto-img{
+
+.proyecto-img {
     border: 1px solid orange;
 
 }
@@ -501,7 +503,12 @@ body {
     color: var(--color-blanco);
     /* Tomate */
     font-size: 3rem;
+    margin-top: 15px;
     margin-bottom: 15px;
+}
+
+#contendor-herramientas {
+    align-items: center;
 }
 
 .proyectos-etiquetas {
@@ -509,14 +516,24 @@ body {
     font-size: 1.125rem;
     /* text-shadow: 0 0 5px #00ffff; */
     text-decoration: underline;
-    text-underline-offset: 5px; /* Espacio entre el texto y la línea */
+    text-underline-offset: 5px;
+    /* Espacio entre el texto y la línea */
 
 }
 
 .proyecto-descripcion {
-    font-size: 1rem; /* Tamaño estándar de texto */
-    color: #f1f1f1; /* Blanco suave */
+    font-size: 1rem;
+    /* Tamaño estándar de texto */
+    color: #f1f1f1;
+    /* Blanco suave */
     line-height: 1.5;
+}
+#conten-main-grande{
+
+    display: block !important;
+}
+#conten-main-mediana{
+    display: none !important ;
 }
 
 .icons-proyectos {
@@ -720,7 +737,7 @@ body {
 
 }
 
-/*------------------FIN----------------------*/ 
+/*------------------FIN----------------------*/
 
 
 /* Media query para pantallas más pequeñas */
@@ -783,27 +800,63 @@ body {
 
     /*------PROYECTOS------*/
     #content-swiper {
-        max-height: 500px !important;  
+        max-height: 500px !important;
         background-color: blue;
         padding: 10px;
     }
+
     .swiper-slide {
         height: auto !important;
         padding: 1rem 1rem !important;
 
     }
-    .content-row{
-        padding-left:  2rem !important;
+
+    .content-row {
+        padding-left: 2rem !important;
         padding-right: 2rem !important;
     }
+
+    #contendor-herramientas {
+        align-items: flex-start;
+    }
+    #conten-main-grande{
+
+        display: none !important;
+    }
+    #conten-main-mediana{
+        display: block !important;
+    }
+
+    #conten-main-mediana .proyectos-i-tablet{
+        margin: 5px 0px !important;
+        display: flex;
+        /* flex-direction: row; */
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0px 10px;
+    }
+
+    .proyecto-nombre {
+        font-size: 2.5rem !important;
+    }
+     .proyectos-i-tablet{
+        width: 100%;
+     }
+     .proyectos-i-tablet i {
+        margin: 10px 5px;
+     }
+
+
+
     .proyectos-enlaces {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        background-color: red;
     }
+
     .proyectos-enlaces a {
         font-size: 15px;
     }

@@ -79,9 +79,20 @@ const main = () => {
                             <h6 class='h6'><span class="proyectos-etiquetas">Proyecto:</span> ${item.real === "1" ? "Real" : "Propio"}</h6>
 
                             <p class='text-md-start proyecto-descripcion'><span class="proyectos-etiquetas">Descripción:</span> ${item.descripcion}</p>
-                            <span class="d-flex flex-row justify-content-flex-start align-items-center"><span class="proyectos-etiquetas">Herramientas:</span> <span> ${item.herramientas.map((herramienta, index) =>
+
+          
+          
+                    <div id="conten-main-grande">    
+                   <span  class="d-flex flex-row justify-content-flex-start align-items-center"><span class="proyectos-etiquetas">Herramientas:</span> <span> ${item.herramientas.map((herramienta, index) =>
                 `<i class="${herramienta[1]} icons-proyectos" title="${herramienta[0]}"></i>`
             ).join(' ')}</span></span>
+
+            </div>
+                    <div id="conten-main-mediana">    
+                    <span  class="proyectos-etiquetas">Herramientas:</span><br><span class="proyectos-i-tablet"> ${item.herramientas.map((herramienta, index) =>
+                `<i class="${herramienta[1]} icons-proyectos" title="${herramienta[0]}"></i>`
+            ).join(' ')}</span>
+            </div>
 
                 <div class="proyectos-enlaces py-4">
     ${item.git ? `<span><a href="${item.git}" target="_blank" class="btn btn-outline-light mx-2"><i class="bi bi-github"></i> Código</a></span>` : ''}
