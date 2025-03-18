@@ -66,8 +66,8 @@ const main = () => {
         data.forEach((item) => {
             div += `
             <div class="swiper-slide">
-                <div class="row py-5 px-5">
-                    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <div class="row py-5 px-5 content-row">
+                    <div class="col-md-6 proyetcto-col-imagen d-flex flex-column justify-content-center align-items-center">
                         <div class="proyecto-img">
                             <img src="${item.img}" class="img-fluid" title="${item.nombre}" alt="${item.nombre}">
                         </div>
@@ -79,9 +79,9 @@ const main = () => {
                             <h6 class='h6'><span class="proyectos-etiquetas">Proyecto:</span> ${item.real === "1" ? "Real" : "Propio"}</h6>
 
                             <p class='text-md-start proyecto-descripcion'><span class="proyectos-etiquetas">Descripción:</span> ${item.descripcion}</p>
-                            <span class="d-flex flex-row justify-content-flex-start align-items-center"><span class="proyectos-etiquetas">Herramientas:</span> ${item.herramientas.map((herramienta, index) =>
+                            <span class="d-flex flex-row justify-content-flex-start align-items-center"><span class="proyectos-etiquetas">Herramientas:</span> <span> ${item.herramientas.map((herramienta, index) =>
                 `<i class="${herramienta[1]} icons-proyectos" title="${herramienta[0]}"></i>`
-            ).join(' ')}</span>
+            ).join(' ')}</span></span>
 
                 <div class="proyectos-enlaces py-4">
     ${item.git ? `<span><a href="${item.git}" target="_blank" class="btn btn-outline-light mx-2"><i class="bi bi-github"></i> Código</a></span>` : ''}
