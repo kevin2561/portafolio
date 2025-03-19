@@ -66,7 +66,7 @@ const main = () => {
         data.forEach((item) => {
             div += `
             <div class="swiper-slide">
-                <div class="row py-5 px-5 content-row">
+                <div id="content-row" class="row py-5 px-5">
                     <div class="col-md-6 proyetcto-col-imagen d-flex flex-column justify-content-center align-items-center">
                         <div class="proyecto-img">
                             <img src="${item.img}" class="img-fluid" title="${item.nombre}" alt="${item.nombre}">
@@ -83,7 +83,7 @@ const main = () => {
           
           
                     <div id="conten-main-grande">    
-                   <span  class="d-flex flex-row justify-content-flex-start align-items-center"><span class="proyectos-etiquetas">Herramientas:</span> <span> ${item.herramientas.map((herramienta, index) =>
+                   <span id="h-cel"  class="d-flex flex-row justify-content-flex-start align-items-center"><span class="proyectos-etiquetas">Herramientas:</span> <span> ${item.herramientas.map((herramienta, index) =>
                 `<i class="${herramienta[1]} icons-proyectos" title="${herramienta[0]}"></i>`
             ).join(' ')}</span></span>
 
@@ -143,8 +143,13 @@ const main = () => {
     }
 
     cv.addEventListener("click", function () {
-        const url = "img/CV_AZUL4.pdf";
-        window.open(url, '_blank');
+
+        const link = document.createElement("a");
+        link.href = "img/CV_AZUL4.pdf";  // Ruta de tu archivo PDF
+        link.download = "img/CV_AZUL4.pdf"; // Nombre con el que se descargará
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     });
     menuHome.addEventListener("click", function (e) {
         e.preventDefault();

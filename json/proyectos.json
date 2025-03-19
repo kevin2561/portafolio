@@ -84,7 +84,7 @@
         "nombre": "App Musica",
         "real": "0",
         "empresa": "",
-        "img": "../img/proyectos/proyecto_appmusica.png",
+        "img": "../img/proyectos/proyecto_appmusica.jpg",
         "git": "https://github.com/kevin2561/appMusica",
         "pagina": "",
         "descripcion": "Pequeña aplicación que permite reproducir música en formato MP3, proporcionando una lista de canciones para disfrutar en una interfaz sencilla y amigable.",
