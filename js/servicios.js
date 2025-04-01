@@ -11,20 +11,3 @@ export const leerJsonServicios = async (url, funcionHTML) => {
         console.error("Error al cargar el JSON:", error);
     }
 };
-// .d-flex { 
-//     display: flex; 
-//     align-items: center; /* Alinea verticalmente todo */
-//     flex-wrap: wrap; /* Permite que los íconos bajen si no caben */
-//     gap: 10px; /* Espacio entre "Herramientas:" y los íconos */
-// }
-
-// .proyectos-etiquetas {
-//     white-space: nowrap; /* Evita que "Herramientas:" se divida en varias líneas */
-// }
-
-// .icons-proyectos {
-//     display: flex;
-//     gap: 8px; 
-//     flex-wrap: wrap; 
-//     align-items: center;
-// }

@@ -7,7 +7,6 @@
         "git": "",
         "pagina": "https://restaurantnikkei.fr",
         "descripcion": "Desarrollo de una página web diseñada para promover los servicios del restaurante de manera efectiva, mejorando su presencia en línea y atrayendo nuevos clientes.",
-
         "herramientas": [
             [
                 "WordPress",
@@ -17,7 +16,10 @@
                 "MySQL",
                 "devicon-mysql-original"
             ],
-            ["Elementor","fa-brands fa-elementor"]
+            [
+                "Elementor",
+                "fa-brands fa-elementor"
+            ]
         ]
     },
     {
@@ -28,7 +30,6 @@
         "git": "https://github.com/kevin2561/theSimpson",
         "pagina": "https://musical-peony-5c424d.netlify.app/",
         "descripcion": "Sitio web inspirado en la serie Los Simpsons, desarrollado como un proyecto personal para practicar React y mejorar mis habilidades en JavaScript. Incluye interacción dinámica y una interfaz atractiva.",
-
         "herramientas": [
             [
                 "React",
@@ -56,7 +57,6 @@
         "git": "https://github.com/kevin2561/dota2",
         "pagina": "",
         "descripcion": "Página web dedicada a Dota 2, desarrollada para combinar mi pasión por el juego con el aprendizaje de JavaScript puro y jQuery. Cuenta con una interfaz intuitiva y elementos dinámicos.",
-
         "herramientas": [
             [
                 "JavaScript",
@@ -88,7 +88,6 @@
         "git": "https://github.com/kevin2561/appMusica",
         "pagina": "",
         "descripcion": "Pequeña aplicación que permite reproducir música en formato MP3, proporcionando una lista de canciones para disfrutar en una interfaz sencilla y amigable.",
-
         "herramientas": [
             [
                 "HTML",
@@ -112,7 +111,6 @@
         "git": "https://github.com/kevin2561/api-rest-doctor-pc",
         "pagina": "",
         "descripcion": "Servicio API RESTful desarrollado para mejorar mis conocimientos en arquitectura REST y el manejo de endpoints. Implementado con herramientas modernas para facilitar la gestión de datos.",
-
         "herramientas": [
             [
                 "Java",
@@ -140,7 +138,6 @@
         "git": "https://github.com/kevin2561/sistema-doctor-pc",
         "pagina": "",
         "descripcion": "Aplicación web que integra mi backend API REST con un frontend interactivo para gestionar productos y controlar ventas. Incluye funciones de creación, edición, actualización y eliminación de registros.",
-
         "herramientas": [
             [
                 "Angular",
@@ -149,6 +146,41 @@
             [
                 "Typescript",
                 "devicon-typescript-plain"
+            ],
+            [
+                "Bootstrap",
+                "fa-brands fa-bootstrap"
+            ],
+            [
+                "Electron",
+                "devicon-electron-original"
+            ]
+        ]
+    },
+    {
+        "nombre": "Sistema control de Letreros",
+        "real": "0",
+        "empresa": "",
+        "img": "../img/proyectos/letroro-alquilar.jpg",
+        "git": "https://github.com/kevin2561/sistema-control-letreros",
+        "pagina": "",
+        "descripcion": "Es una aplicación desarrollada desde cero, tanto en el backend como en el frontend, con el objetivo de modernizar y agilizar un proceso que antes se realizaba manualmente. Este sistema permite gestionar y controlar de manera eficiente la actualización de letreros.",
+        "herramientas": [
+            [
+                "React",
+                "fa-brands fa-react"
+            ],
+            [
+                "Java",
+                "fa-brands fa-java"
+            ],
+            [
+                "Spring",
+                "devicon-spring-original"
+            ],
+            [
+                "Postgresql",
+                "devicon-postgresql-plain"
             ],
             [
                 "Electron",
