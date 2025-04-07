@@ -11,3 +11,38 @@ export const leerJsonServicios = async (url, funcionHTML) => {
         console.error("Error al cargar el JSON:", error);
     }
 };
+
+/*
+   {
+        "nombre": "Dota 2",
+        "real": "0",
+        "empresa": "",
+        "img": "../img/proyectos/proyecto_dota2.jpg",
+        "git": "https://github.com/kevin2561/dota2",
+        "pagina": "",
+        "descripcion": "Página web dedicada a Dota 2, desarrollada para combinar mi pasión por el juego con el aprendizaje de JavaScript puro y jQuery. Cuenta con una interfaz intuitiva y elementos dinámicos.",
+        "herramientas": [
+            [
+                "JavaScript",
+                "fa-brands fa-js"
+            ],
+            [
+                "Jquery",
+                "devicon-jquery-plain"
+            ],
+            [
+                "Bootstrap",
+                "fa-brands fa-bootstrap"
+            ],
+            [
+                "HTML",
+                "fa-brands fa-html5"
+            ],
+            [
+                "CSS",
+                "fa-brands fa-css3-alt"
+            ]
+        ]
+    },
+    
+*/ 

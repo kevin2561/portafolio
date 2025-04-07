@@ -548,7 +548,8 @@ body {
 .icons-proyectos:hover {
 
     transform: scale(1.2);
-    filter: drop-shadow(0 0 5px #ffffff);
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
 }
 
 
@@ -1060,9 +1061,17 @@ body {
     .swiper-slide {
         padding: 1.5rem 1.5rem;
     }
+    .proyectos-informacion{
+        width: 300px;
+        /* min-height:900px ; */
+        margin-top: 1rem;
+    }
 
     .proyecto-nombre {
         font-size: 1.5rem;
+    }
+    .btns-mov{
+        display: none !important;
     }
 
     #h-cel {
@@ -1073,8 +1082,6 @@ body {
         gap: 10px 0px;
         align-items: flex-start !important;
     }
-
-    .proyectos-enlaces {}
 
     .proyectos-enlaces a {
         color: var(--color-blanco);

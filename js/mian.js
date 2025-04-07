@@ -62,8 +62,9 @@ const main = () => {
 
     const proyectosHTML = (data) => {
         let div = "";
+        const total = data.length
 
-        data.forEach((item) => {
+        data.forEach((item, index) => {
             div += `
             <div class="swiper-slide">
                 <div id="content-row" class="row py-5 px-5">
@@ -72,7 +73,7 @@ const main = () => {
                             <img src="${item.img}" class="img-fluid" title="${item.nombre}" alt="${item.nombre}">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 proyectos-informacion">
                         <div class="text-left">
                             <h2 class='h2 proyecto-nombre'>${item.nombre}</h2>
                             ${item.empresa === "" ? "" : `<h6 class='h6'><span class="proyectos-etiquetas">Empresa:</span> ${item.empresa}</h6>`}
@@ -102,6 +103,7 @@ const main = () => {
                         </div>
                     </div>
                 </div>
+                <div class="Paginación">${index + 1} / ${total}</div>
             </div>`;
         });
 

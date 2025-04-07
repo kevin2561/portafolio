@@ -1,12 +1,12 @@
 [
     {
-        "nombre": "EDO",
+        "nombre": "Dessarrollo de Páginas Web",
         "real": "1",
         "empresa": "SECUAZ",
-        "img": "../img/proyectos/proyecto_EDO.jpg",
+        "img": "../img/proyectos/paginas-web.jpg",
         "git": "",
         "pagina": "https://restaurantnikkei.fr",
-        "descripcion": "Desarrollo de una página web diseñada para promover los servicios del restaurante de manera efectiva, mejorando su presencia en línea y atrayendo nuevos clientes.",
+        "descripcion": "Durante mi experiencia en SECUAZ. Tuve la oportunidad de crear desde cero varias sitios web completos, y también de realizar actualizaciones y mejoras en otros proyectos ya existentes, adaptando sus funcionalidades y diseño según las necesidades del cliente.",
         "herramientas": [
             [
                 "WordPress",
@@ -23,83 +23,29 @@
         ]
     },
     {
-        "nombre": "The Simpson",
+        "nombre": "Sistema control Stock",
         "real": "0",
         "empresa": "",
-        "img": "./../img/proyectos/proyecto_simpson.jpg",
-        "git": "https://github.com/kevin2561/theSimpson",
-        "pagina": "https://musical-peony-5c424d.netlify.app/",
-        "descripcion": "Sitio web inspirado en la serie Los Simpsons, desarrollado como un proyecto personal para practicar React y mejorar mis habilidades en JavaScript. Incluye interacción dinámica y una interfaz atractiva.",
-        "herramientas": [
-            [
-                "React",
-                "fa-brands fa-react"
-            ],
-            [
-                "MySQL",
-                "devicon-mysql-original"
-            ],
-            [
-                "JavaScript",
-                "fa-brands fa-js"
-            ],
-            [
-                "Bootstrap",
-                "fa-brands fa-bootstrap"
-            ]
-        ]
-    },
-    {
-        "nombre": "Dota 2",
-        "real": "0",
-        "empresa": "",
-        "img": "../img/proyectos/proyecto_dota2.jpg",
-        "git": "https://github.com/kevin2561/dota2",
+        "img": "../img/proyectos/sistemastock.jpg",
+        "git": "https://github.com/kevin2561/sistema-doctor-pc",
         "pagina": "",
-        "descripcion": "Página web dedicada a Dota 2, desarrollada para combinar mi pasión por el juego con el aprendizaje de JavaScript puro y jQuery. Cuenta con una interfaz intuitiva y elementos dinámicos.",
+        "descripcion": "Aplicación web que integra mi backend API REST con un frontend interactivo para gestionar productos y controlar ventas. Incluye funciones de creación, edición, actualización y eliminación de registros.",
         "herramientas": [
             [
-                "JavaScript",
-                "fa-brands fa-js"
+                "Angular",
+                "fa-brands fa-angular"
             ],
             [
-                "Jquery",
-                "devicon-jquery-plain"
+                "Typescript",
+                "devicon-typescript-plain"
             ],
             [
                 "Bootstrap",
                 "fa-brands fa-bootstrap"
             ],
             [
-                "HTML",
-                "fa-brands fa-html5"
-            ],
-            [
-                "CSS",
-                "fa-brands fa-css3-alt"
-            ]
-        ]
-    },
-    {
-        "nombre": "App Musica",
-        "real": "0",
-        "empresa": "",
-        "img": "../img/proyectos/proyecto_appmusica.jpg",
-        "git": "https://github.com/kevin2561/appMusica",
-        "pagina": "",
-        "descripcion": "Pequeña aplicación que permite reproducir música en formato MP3, proporcionando una lista de canciones para disfrutar en una interfaz sencilla y amigable.",
-        "herramientas": [
-            [
-                "HTML",
-                "fa-brands fa-html5"
-            ],
-            [
-                "CSS",
-                "fa-brands fa-css3-alt"
-            ],
-            [
-                "JavaScript",
-                "fa-brands fa-js"
+                "Electron",
+                "devicon-electron-original"
             ]
         ]
     },
@@ -131,29 +77,53 @@
         ]
     },
     {
-        "nombre": "Sistema control Stock",
+        "nombre": "The Simpson",
         "real": "0",
         "empresa": "",
-        "img": "../img/proyectos/sistemastock.jpg",
-        "git": "https://github.com/kevin2561/sistema-doctor-pc",
-        "pagina": "",
-        "descripcion": "Aplicación web que integra mi backend API REST con un frontend interactivo para gestionar productos y controlar ventas. Incluye funciones de creación, edición, actualización y eliminación de registros.",
+        "img": "./../img/proyectos/proyecto_simpson.jpg",
+        "git": "https://github.com/kevin2561/theSimpson",
+        "pagina": "https://musical-peony-5c424d.netlify.app/",
+        "descripcion": "Sitio web inspirado en la serie Los Simpsons, desarrollado como un proyecto personal para practicar React y mejorar mis habilidades en JavaScript. Incluye interacción dinámica y una interfaz atractiva.",
         "herramientas": [
             [
-                "Angular",
-                "fa-brands fa-angular"
+                "React",
+                "fa-brands fa-react"
             ],
             [
-                "Typescript",
-                "devicon-typescript-plain"
+                "MySQL",
+                "devicon-mysql-original"
+            ],
+            [
+                "JavaScript",
+                "fa-brands fa-js"
             ],
             [
                 "Bootstrap",
                 "fa-brands fa-bootstrap"
+            ]
+        ]
+    },
+ 
+    {
+        "nombre": "App Musica",
+        "real": "0",
+        "empresa": "",
+        "img": "../img/proyectos/proyecto_appmusica.jpg",
+        "git": "https://github.com/kevin2561/appMusica",
+        "pagina": "",
+        "descripcion": "Pequeña aplicación que permite reproducir música en formato MP3, proporcionando una lista de canciones para disfrutar en una interfaz sencilla y amigable.",
+        "herramientas": [
+            [
+                "HTML",
+                "fa-brands fa-html5"
             ],
             [
-                "Electron",
-                "devicon-electron-original"
+                "CSS",
+                "fa-brands fa-css3-alt"
+            ],
+            [
+                "JavaScript",
+                "fa-brands fa-js"
             ]
         ]
     },
