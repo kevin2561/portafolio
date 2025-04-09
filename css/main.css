@@ -873,7 +873,7 @@ body {
 
 /* Media query para pantallas muy pequeñas */
 @media (max-width: 480px) {
-
+  
     .navbar>.container,
     .navbar>.container-fluid,
     .navbar>.container-lg,
@@ -965,10 +965,7 @@ body {
         /* background: blue; */
     }
 
-    #habilidades-blandas {
-        /* display: none; */
-
-    }
+  
 
     #contenedor-habilidades {
         width: 100%;

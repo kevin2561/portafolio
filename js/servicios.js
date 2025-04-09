@@ -6,7 +6,7 @@ export const leerJsonServicios = async (url, funcionHTML) => {
         }
         const data = await response.json();
         funcionHTML(data);
-        console.log("Datos cargados correctamente:", data);
+        // console.log("Datos cargados correctamente:", data);
     } catch (error) {
         console.error("Error al cargar el JSON:", error);
     }

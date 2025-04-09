@@ -130,19 +130,37 @@ const main = () => {
     leerJsonServicios("./json/proyectos.json", proyectosHTML);
 
     const enlacesMenu = () => {
-        let a = document.querySelectorAll("#enlaces-nav a");
-        // console.log(a)
-        a.forEach((enlace, index) => {
-            enlace.addEventListener("click", (e) => {
-                e.preventDefault(); // Evita que se agregue el # en la URL
-
-                // Desplazar suavemente al elemento
-                const targetElement = document.getElementById(enlaces[index]);
-                console.log(enlace)
-                targetElement.scrollIntoView({ behavior: "smooth" });
-            });
+        // Selecciona todos los enlaces del contenedor
+        const enlacesNav = document.querySelectorAll("#enlaces-nav a");
+        // Selecciona el contenedor del collapse del menú
+        const navCollapse = document.getElementById("navbarNavAltMarkup");
+      
+        // Instancia la API de collapse si no existe ya
+        let collapseInstance = bootstrap.Collapse.getInstance(navCollapse);
+        if (!collapseInstance) {
+          collapseInstance = new bootstrap.Collapse(navCollapse, {
+            toggle: false, // Evita que se abra/cierre inmediatamente al cargar la página
+          });
+        }
+      
+        enlacesNav.forEach((enlace, index) => {
+          enlace.addEventListener("click", (e) => {
+            e.preventDefault(); // Evita que se agregue el '#' en la URL
+      
+            // Desplazar suavemente al elemento (asegúrate de que 'enlaces' esté definido)
+            const targetElement = document.getElementById(enlaces[index]);
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+      
+            // Si el menú está visible (clase 'show' aplicada), lo cerramos
+            if (navCollapse.classList.contains("show")) {
+              collapseInstance.hide();
+            }
+          });
         });
-    }
+      };
+      
 
     cv.addEventListener("click", function () {
 
