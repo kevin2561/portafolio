@@ -3,102 +3,119 @@
         "nombre": "Python",
         "color": "#306998",
         "level": "Básico",
-        "icono": "<i class='fa-brands fa-python'></i>"
+        "icono": "<i class='fa-brands fa-python'></i>",
+        "typo": "0"
     },
     {
         "nombre": "MySQL",
         "color": "#00758F",
         "level": "Intermedio",
-        "icono": "<i class='devicon-mysql-original'></i>"
+        "icono": "<i class='devicon-mysql-original'></i>",
+        "typo": "2"
     },
     {
         "nombre": "JavaScript",
         "color": "#F7DF1E",
         "level": "Intermedio",
-        "icono": "<i class='fa-brands fa-js'></i>"
+        "icono": "<i class='fa-brands fa-js'></i>",
+        "typo": "1"
     },
     {
         "nombre": "HTML",
         "color": "#E44D26",
         "level": "Intermedio",
-        "icono": "<i class='fa-brands fa-html5'></i>"
+        "icono": "<i class='fa-brands fa-html5'></i>",
+        "typo": "1"
     },
     {
         "nombre": "CSS",
         "color": "#1572B6",
         "level": "Intermedio",
-        "icono": "<i class='fa-brands fa-css3-alt'></i>"
+        "icono": "<i class='fa-brands fa-css3-alt'></i>",
+        "typo": "1"
     },
     {
         "nombre": "Github",
         "color": "#181717",
         "level": "Intermedio",
-        "icono": "<i class='fa-brands fa-github'></i>"
+        "icono": "<i class='fa-brands fa-github'></i>",
+        "typo": "0"
     },
     {
         "nombre": "React",
         "color": "#61DAFB",
         "level": "Intermedio",
-        "icono": "<i class='fa-brands fa-react'></i>"
+        "icono": "<i class='fa-brands fa-react'></i>",
+        "typo": "1"
     },
     {
         "nombre": "Angular",
         "color": "#DD0031",
         "level": "Intermedio",
-        "icono": "<i class='fa-brands fa-angular'></i>"
+        "icono": "<i class='fa-brands fa-angular'></i>",
+        "typo": ""
     },
     {
         "nombre": "SQL Server",
         "color": "#A91D22",
         "level": "Intermedio",
-        "icono": "<i class='devicon-microsoftsqlserver-plain'></i>"
+        "icono": "<i class='devicon-microsoftsqlserver-plain'></i>",
+        "typo": "2"
     },
     {
         "nombre": "Bootstrap",
         "color": "#563D7C",
         "level": "Intermedio",
-        "icono": "<i class='fa-brands fa-bootstrap'></i>"
+        "icono": "<i class='fa-brands fa-bootstrap'></i>",
+        "typo": "1"
     },
     {
         "nombre": "Git",
         "color": "#F05032",
         "level": "Intermedio",
-        "icono": "<i class='fa-brands fa-git-alt'></i>"
+        "icono": "<i class='fa-brands fa-git-alt'></i>",
+        "typo": "0"
     },
     {
         "nombre": "WordPress",
         "color": "#21759B",
         "level": "Intermedio",
-        "icono": "<i class='fa-brands fa-wordpress'></i>"
+        "icono": "<i class='fa-brands fa-wordpress'></i>",
+        "typo": "1"
     },
     {
         "nombre": "Power Bi",
         "color": "#F2C811",
         "level": "Básico",
-        "icono": "<i class='bi bi-bar-chart-fill'></i>"
+        "icono": "<i class='bi bi-bar-chart-fill'></i>",
+        "typo": "2"
     },
     {
         "nombre": "Java",
         "color": "#EA2D2E",
         "level": "Básico",
-        "icono": "<i class='fa-brands fa-java'></i>"
+        "icono": "<i class='fa-brands fa-java'></i>",
+        "typo": "0"
     },
     {
         "nombre": "Spring Boot",
         "color": "#6DB33F",
         "level": "Básico",
-        "icono": "<i class='devicon-spring-original'></i>"
+        "icono": "<i class='devicon-spring-original'></i>",
+        "typo": "0"
     },
     {
         "nombre": "Typescript ",
         "color": "#3178C6",
         "level": "Intermedio",
-        "icono": "<i class='devicon-typescript-plain'></i>"
+        "icono": "<i class='devicon-typescript-plain'></i>",
+        "typo": "1"
     },
     {
         "nombre": "Node JS",
         "color": "#83CD29",
         "level": "Básico",
-        "icono": "<i class='devicon-nodejs-plain-wordmark'></i>"
+        "icono": "<i class='devicon-nodejs-plain-wordmark'></i>",
+        "typo": "0"
     }
 ]

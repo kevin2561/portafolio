@@ -2,10 +2,13 @@ import { leerJsonServicios } from "./servicios.js";
 
 const main = () => {
     const cv = document.getElementById("cv");
+    const btnFrontEnd = document.getElementById("btnFrontEnd");
+    const btnBackEnd = document.getElementById("btnBackEnd");
+    const btnBD = document.getElementById("btnBD");
     const menuHome = document.getElementById("menu-home");
     let enlaces = ["sobre-mi", "tecnologias-main", "habilidades-blandas", "proyectos-main", "contacto-main"]
 
-    const tecnologiasHTML2 = (tecnologias) => {
+    const tecnologiasHTML = (tecnologias) => {
         let div = "";
         tecnologias.sort((a, b) => a.nombre.toLowerCase() < b.nombre.toLowerCase() ? -1
             : a.nombre.toLowerCase() > b.nombre.toLowerCase() ? 1
@@ -42,7 +45,7 @@ const main = () => {
 
     }
 
-    leerJsonServicios("./json/tecnologias.json", tecnologiasHTML2);
+    leerJsonServicios("./json/tecnologias.json", tecnologiasHTML);
 
     const habilidadBlandasHTML = (data) => {
         let div = "";
@@ -134,33 +137,76 @@ const main = () => {
         const enlacesNav = document.querySelectorAll("#enlaces-nav a");
         // Selecciona el contenedor del collapse del menú
         const navCollapse = document.getElementById("navbarNavAltMarkup");
-      
+
         // Instancia la API de collapse si no existe ya
         let collapseInstance = bootstrap.Collapse.getInstance(navCollapse);
         if (!collapseInstance) {
-          collapseInstance = new bootstrap.Collapse(navCollapse, {
-            toggle: false, // Evita que se abra/cierre inmediatamente al cargar la página
-          });
+            collapseInstance = new bootstrap.Collapse(navCollapse, {
+                toggle: false, // Evita que se abra/cierre inmediatamente al cargar la página
+            });
         }
-      
+
         enlacesNav.forEach((enlace, index) => {
-          enlace.addEventListener("click", (e) => {
-            e.preventDefault(); // Evita que se agregue el '#' en la URL
-      
-            // Desplazar suavemente al elemento (asegúrate de que 'enlaces' esté definido)
-            const targetElement = document.getElementById(enlaces[index]);
-            if (targetElement) {
-              targetElement.scrollIntoView({ behavior: "smooth" });
-            }
-      
-            // Si el menú está visible (clase 'show' aplicada), lo cerramos
-            if (navCollapse.classList.contains("show")) {
-              collapseInstance.hide();
-            }
-          });
+            enlace.addEventListener("click", (e) => {
+                e.preventDefault(); // Evita que se agregue el '#' en la URL
+
+                // Desplazar suavemente al elemento (asegúrate de que 'enlaces' esté definido)
+                const targetElement = document.getElementById(enlaces[index]);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                }
+
+                // Si el menú está visible (clase 'show' aplicada), lo cerramos
+                if (navCollapse.classList.contains("show")) {
+                    collapseInstance.hide();
+                }
+            });
         });
-      };
-      
+    };
+
+    const formContacto = () => {
+        const resultado = document.getElementById('resultado');
+        const contenedorResultado = document.getElementById('contenedor-resultado');
+
+        document.getElementById('formulario-contacto').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const serviceID = 'default_service';
+            const templateID = 'template_pkll0dt';
+            contenedorResultado.style.display = "block";
+
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    resultado.innerText = "¡Mensaje Enviado Exitosamente!";
+                    resultado.style.color = "#15fd15";
+                    setTimeout(() => {
+                        contenedorResultado.style.display = "none";
+                        limpiarInputsFormulario();
+                    }, 3000);
+
+                }, (error) => {
+                    resultado.innerText = "Hubo un error al enviar el mensaje. Intente nuevamente.";
+                    resultado.style.color = "#ff0000";
+                    console.log(error)
+                    setTimeout(() => {
+                        contenedorResultado.style.display = "none";
+                        limpiarInputsFormulario();
+
+                    }, 3000);
+
+                });
+
+
+        });
+    }
+
+    const limpiarInputsFormulario = () => {
+        const inputs = document.querySelectorAll("#formulario-contacto .inputs");
+        inputs.forEach((input) => {
+            input.value = "";
+        })
+
+    }
 
     cv.addEventListener("click", function () {
 
@@ -183,49 +229,22 @@ const main = () => {
     })
 
 
-    const formContacto = () => {
-        const resultado = document.getElementById('resultado');
-        const contenedorResultado = document.getElementById('contenedor-resultado');
+    // btnFrontEnd.addEventListener("click", async function () {
+    //     const url = "./json/tecnologias.json"
+    //     const response = await fetch(url)
+    //     const data = await response.json()
 
-        document.getElementById('formulario-contacto').addEventListener('submit', function (event) {
-            event.preventDefault();
-            const serviceID = 'default_service';
-            const templateID = 'template_pkll0dt';
-            contenedorResultado.style.display = "block";
+    //     const soloBack = data.filter((item) => item.typo === "0")
+    //     const soloFront = data.filter((item) => item.typo === "1")
+    //     const soloBD = data.filter((item) => item.typo === "2")
 
-
-            emailjs.sendForm(serviceID, templateID, this)
-                .then(() => {
-                    resultado.innerText = "¡Mensaje Enviado Exitosamente!";
-                    resultado.style.color = "#15fd15";
-                    setTimeout(() => {
-                        contenedorResultado.style.display = "none";
-                        limpiarInputsFormulario();
-                    }, 8000);
-
-                }, (error) => {
-                    resultado.innerText = "Hubo un error al enviar el mensaje. Intente nuevamente.";
-                    resultado.style.color = "#ff0000";
-                    console.log(error)
-                    setTimeout(() => {
-                        contenedorResultado.style.display = "none";
-                        limpiarInputsFormulario();
-
-                    }, 8000);
-
-                });
+    //     console.log(soloBack)
+    //     console.log(soloFront)
+    //     console.log(soloBD)
 
 
-        });
-    }
+    // })
 
-    const limpiarInputsFormulario = () => {
-        const inputs = document.querySelectorAll("#formulario-contacto .inputs");
-        inputs.forEach((input) => {
-            input.value = "";
-        })
-
-    }
 
 
     enlacesMenu();
