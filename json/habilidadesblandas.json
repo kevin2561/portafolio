@@ -1,31 +1,31 @@
 [
     {
-        "img": "img/habilidades blandas/trabajo-equipo.jpg",
+        "img": "https://res.cloudinary.com/dmu7h8vif/image/upload/v1744341584/trabajo-equipo_wia53t.webp",
         "nombre": "Trabajo en Equipo",
         "icono": "people-fill"
     },
     {
-        "img": "img/habilidades blandas/responsabilidad.jpg",
+        "img": "https://res.cloudinary.com/dmu7h8vif/image/upload/v1744341584/responsabilidad_wvjve6.webp",
         "nombre": "Responsabilidad",
         "icono": "person-check"
     },
     {
-        "img": "img/habilidades blandas/paciencia.jpg",
+        "img": "https://res.cloudinary.com/dmu7h8vif/image/upload/v1744341585/paciencia_eo6tlh.webp",
         "nombre": "Paciencia",
         "icono": "hourglass-split"
     },
     {
-        "img": "img/habilidades blandas/comunicacion.jpg",
+        "img": "https://res.cloudinary.com/dmu7h8vif/image/upload/v1744341584/comunicacion_why87m.webp",
         "nombre": "Comunicación",
         "icono": "chat-dots"
     },
     {
-        "img": "img/habilidades blandas/iniciativa.jpg",
+        "img": "https://res.cloudinary.com/dmu7h8vif/image/upload/v1744341584/iniciativa_pzbj2b.webp",
         "nombre": "Iniciativa",
         "icono": "lightbulb-fill"
     },
     {
-        "img": "img/habilidades blandas/ganas-aprender.jpg",
+        "img": "https://res.cloudinary.com/dmu7h8vif/image/upload/v1744341584/ganas-aprender_odoumw.webp",
         "nombre": "Ganas de aprender",
         "icono": "book"
     }
