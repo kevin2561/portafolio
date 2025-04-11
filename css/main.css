@@ -271,7 +271,7 @@ body {
     height: auto;
 }
 
-#carrusel-tecnologias {
+#contenedor-tecnologias {
     width: 100%;
     display: flex;
     background-color: rgba(0, 0, 0, 0.6);
@@ -280,15 +280,23 @@ body {
     justify-content: center;
     padding: 30px;
     gap: 50px 20px;
-
     border-radius: 15px;
-
-
     backdrop-filter: blur(10px);
     /* Para dar un efecto de vidrio */
 
+}
 
+#contenedor-tecnologias .btn-filter {
+    border: 3px solid var(--bs-btn-border-color) !important;
+}
 
+#carrusel-tecnologias {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 50px 20px;
 }
 
 #carrusel-tecnologias .contenedor-cd-tecnologia {
@@ -301,11 +309,10 @@ body {
     gap: 20px 0px;
     justify-content: flex-end;
     /* align-content: stretch; */
+    user-select: none;
 
 
 }
-
-#carrusel-tecnologias .contenedor-cd-tecnologia svg {}
 
 .contenedor-cd-svg {
     padding: 5px;
@@ -873,7 +880,7 @@ body {
 
 /* Media query para pantallas muy pequeñas */
 @media (max-width: 480px) {
-  
+
     .navbar>.container,
     .navbar>.container-fluid,
     .navbar>.container-lg,
@@ -939,6 +946,14 @@ body {
         padding: 10px;
     }
 
+    .contenedor-filtros {
+        display: flex;
+    }
+
+    #contenedor-tecnologias {
+        padding: 10px !important;
+    }
+
     #carrusel-tecnologias {
         width: 100%;
         display: flex;
@@ -947,7 +962,7 @@ body {
         justify-content: space-evenly;
         padding: 15px 0px;
         border-radius: 15px;
-        gap: 30px 10px;
+        /* gap: 30px 10px; */
         /* mask-image: linear-gradient(to right, rgba(228, 13, 13, 0), rgb(100, 0, 0) 20%, rgb(5, 0, 0) 80%, rgba(59, 252, 0, 0)); */
         align-items: center;
     }
@@ -960,12 +975,23 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px 0px;
+        /* gap: 20px 0px; */
         /* justify-content: space-around; */
         /* background: blue; */
     }
 
-  
+    .txt-nombre-nivel {
+        padding: 10px 15px !important;
+    }
+
+    .contenedor-filtros {
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        justify-content: center;
+        gap: 15px 0px;
+
+    }
 
     #contenedor-habilidades {
         width: 100%;
@@ -1058,7 +1084,8 @@ body {
     .swiper-slide {
         padding: 1.5rem 1.5rem;
     }
-    .proyectos-informacion{
+
+    .proyectos-informacion {
         width: 300px;
         /* min-height:900px ; */
         margin-top: 1rem;
@@ -1067,7 +1094,8 @@ body {
     .proyecto-nombre {
         font-size: 1.5rem;
     }
-    .btns-mov{
+
+    .btns-mov {
         display: none !important;
     }
 

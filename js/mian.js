@@ -8,9 +8,15 @@ const main = () => {
     const menuHome = document.getElementById("menu-home");
     let enlaces = ["sobre-mi", "tecnologias-main", "habilidades-blandas", "proyectos-main", "contacto-main"]
 
-    const tecnologiasHTML = (tecnologias) => {
+    let todasLasTecnologias = [];
+
+    const filtrarPorTipo = (tipo) => {
+        return todasLasTecnologias.filter(tecnologia => tecnologia.tipo === tipo)
+    }
+
+    const tecnologiasHTML = (tecnologiasFiltradas) => {
         let div = "";
-        tecnologias.sort((a, b) => a.nombre.toLowerCase() < b.nombre.toLowerCase() ? -1
+        tecnologiasFiltradas.sort((a, b) => a.nombre.toLowerCase() < b.nombre.toLowerCase() ? -1
             : a.nombre.toLowerCase() > b.nombre.toLowerCase() ? 1
                 : 0).map((tecnologia, index) => {
                     div += `<article class='contenedor-cd-tecnologia' data-nivel='${tecnologia.level}'   style='--icon-color: ${tecnologia.color};'>`
@@ -45,7 +51,10 @@ const main = () => {
 
     }
 
-    leerJsonServicios("./json/tecnologias.json", tecnologiasHTML);
+    leerJsonServicios("./json/tecnologias.json", (data => {
+        todasLasTecnologias = data;
+        tecnologiasHTML(filtrarPorTipo("1"))
+    }));
 
     const habilidadBlandasHTML = (data) => {
         let div = "";
@@ -228,22 +237,16 @@ const main = () => {
 
     })
 
+    btnBackEnd.addEventListener("click", () => {
+        tecnologiasHTML(filtrarPorTipo("0"))
+    })
+    btnFrontEnd.addEventListener("click", () => {
+        tecnologiasHTML(filtrarPorTipo("1"))
+    })
 
-    // btnFrontEnd.addEventListener("click", async function () {
-    //     const url = "./json/tecnologias.json"
-    //     const response = await fetch(url)
-    //     const data = await response.json()
-
-    //     const soloBack = data.filter((item) => item.typo === "0")
-    //     const soloFront = data.filter((item) => item.typo === "1")
-    //     const soloBD = data.filter((item) => item.typo === "2")
-
-    //     console.log(soloBack)
-    //     console.log(soloFront)
-    //     console.log(soloBD)
-
-
-    // })
+    btnBD.addEventListener("click", () => {
+        tecnologiasHTML(filtrarPorTipo("2"))
+    })
 
 
 
