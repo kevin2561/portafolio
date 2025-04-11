@@ -2,7 +2,7 @@
     {
         "nombre": "Dessarrollo de Páginas Web",
         "real": "1",
-        "empresa": "SECUAZ",
+        "empresa": "Secuaz Agencia de Branding",
         "img": "https://res.cloudinary.com/dmu7h8vif/image/upload/v1744303374/paginas-web_jppyy8.jpg",
         "git": "",
         "pagina": "https://restaurantnikkei.fr",
@@ -53,7 +53,7 @@
         "nombre": "Api Rest",
         "real": "0",
         "empresa": "",
-        "img": "https://res.cloudinary.com/dmu7h8vif/image/upload/v1744303374/api-rest_j576mn.png",
+        "img": "https://res.cloudinary.com/dmu7h8vif/image/upload/v1744392553/api2_vic8cq.png",
         "git": "https://github.com/kevin2561/api-rest-doctor-pc",
         "pagina": "",
         "descripcion": "Servicio API RESTful desarrollado para mejorar mis conocimientos en arquitectura REST y el manejo de endpoints. Implementado con herramientas modernas para facilitar la gestión de datos.",
@@ -103,7 +103,6 @@
             ]
         ]
     },
- 
     {
         "nombre": "App Musica",
         "real": "0",
