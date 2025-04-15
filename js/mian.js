@@ -220,8 +220,8 @@ const main = () => {
     cv.addEventListener("click", function () {
 
         const link = document.createElement("a");
-        link.href = "img/CV_AZUL4.pdf";  // Ruta de tu archivo PDF
-        link.download = "img/CV_AZUL4.pdf"; // Nombre con el que se descargará
+        link.href = "img/CV_KevinNoaRomero.pdf";  // Ruta de tu archivo PDF
+        link.download = "CV_KevinNoaRomero.pdf"; // Nombre con el que se descargará
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
