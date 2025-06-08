@@ -6,7 +6,7 @@ const main = () => {
     const btnBackEnd = document.getElementById("btnBackEnd");
     const btnBD = document.getElementById("btnBD");
     const menuHome = document.getElementById("menu-home");
-    let enlaces = ["sobre-mi", "tecnologias-main", "habilidades-blandas", "proyectos-main", "contacto-main"]
+    let enlaces = ["sobre-mi", "tecnologias-main", "habilidades-blandas", "proyectos-main", "certificados-main", "contacto-main"]
 
     let todasLasTecnologias = [];
 
